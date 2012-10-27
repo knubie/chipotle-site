@@ -1,0 +1,182 @@
+body {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+}
+#container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Header Navigation
+ * ----------------------------------
+*/
+#logo {
+  position: absolute;
+  top: 8px;
+  left: 31px;
+  width: 65px;
+  height: 65px;
+  border-radius: 33px;
+  background-color: #9CA5A7;
+  z-index: 99;
+}
+#header-nav {
+  background-color: #CBCBCB;
+  height: 55px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+#nav {
+  position: absolute;
+  left: 120px;
+  top: 18px;
+}
+#nav li {
+  display: inline;
+  margin-right: 17px;
+  text-transform: uppercase;
+}
+#order-now {
+  width: 94px;
+  height: 24px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  background-color: #E1E3E4;
+  border: 1px solid #666;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+}
+#contact, #search-button {
+  width: 25px;
+  height: 25px;
+  background-color: #E1E3E4;
+  border: 1px solid #666;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+
+/* Hero Carousel
+ * ----------------------------------
+*/
+#hero {
+  width: 1024px;
+  height: 477px;
+}
+.slides_container {
+  width: 1024px;
+  height: 477px;
+}
+.slides_container div {
+  width: 1024px;
+  height: 477px;
+  display: block;
+}
+
+
+/* Sub Navigation
+ * ----------------------------------
+*/
+#sticky-subnav {
+  width: 100%;
+  height: 35px;
+  background-color: #F4F5F5;
+  border: 1px solid #B3B4B6;
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-left: 30px;
+  top: 0;
+}
+#subnav li {
+  display: inline;
+  margin-right: 17px;
+  text-transform: uppercase;
+}
+
+/* Near You
+ * ----------------------------------
+*/
+#near-you-container {
+  width: 324px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-top: 30px;
+  float: left;
+}
+#near-you-container h1 {
+  font-size: 22px;
+}
+#near-you-container h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 20px;
+}
+#near-you-container h3 {
+  font-size: 14px;
+  margin-top: 15px;
+}
+#near-you-container h4 {
+  font-size: 10px;
+}
+#photogroup1 {
+  display: inline-block;
+  width: 454px;
+}
+#photo1, #photo2, #photo3, .photo4, #photo5 {
+  background-color: #E1E3E4;
+}
+#photo1 {
+  width: 247px;
+  height: 130px;
+  margin-top: 30px;
+  float: left;
+  margin-right: 13px;
+}
+#photo2 {
+  width: 181px;
+  height: 130px;
+  margin-top: 30px;
+  float: left;
+  margin-right: 13px;
+}
+#map1{
+  margin-top: 13px;
+  float: left;
+}
+#photo3 {
+  width: 242px;
+  height: 272px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.line {
+  border-bottom: 1px solid #B3B4B6;
+  width: 1024px;
+  margin-top: 40px;
+}
+.div-header {
+  background-color: #FFF;
+  margin: -14px auto 0 auto;
+  text-align: center;
+  width: 240px;
+  font-size: 22px;
+  display: block;
+}
+.photo4, #photo5 {
+  height: 272px;
+  display: inline-block;
+  margin-top: 24px;
+}
+.photo4 {
+  width: 310px;
+}
+#photo5 {
+  width: 374px;
+  margin: 0 11px;
+}
