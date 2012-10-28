@@ -8,10 +8,7 @@ a {
   text-decoration: none;
   color: #666;
 }
-#container-main {
-  display: none;
-}
-#container-main, #container-buzz {
+#container {
   width: 1024px;
   margin: 0 auto;
 }
@@ -32,7 +29,7 @@ a {
 #header-nav {
   background-color: #CBCBCB;
   height: 55px;
-  width: 100%;
+  width: 1024px;
   position: relative;
   border-bottom: 1px solid #000;
 }
@@ -394,4 +391,52 @@ a {
   background-color: #E2E4E5;
   margin: 8px 22px;
   display: inline-block;
+}
+
+/* Menu
+ * ----------------------------------
+*/
+.menu-pic {
+  width: 117px;
+  height: 78px;
+  background-color: #E2E4E5;
+  border: 1px solid #C9CACB;
+  margin: 11px;
+  display: inline-block;
+}
+.menu-pic:hover {
+  background-color: #FAFBFB;
+  border: 1px solid #999999;
+}
+.slide {
+  width: 1024px;
+  height: 477px;
+  background-color: #E2E4E5;
+}
+#hero .slides_container .slide-text {
+  position: absolute;
+  top: 81px;
+  left: 23px;
+  width: 300px;
+  color: #858585;
+  line-height: 18px;
+}
+#hero .slides_container .slide-text h1 {
+  font-size: 26px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#hero .slides_container .order-now {
+  width: 94px;
+  height: 24px;
+  box-sizing: border-box;
+  padding-top: 3px;
+  background-color: #FAFBFB;
+  border: 1px solid #666;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
 }

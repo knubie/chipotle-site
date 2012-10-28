@@ -3,6 +3,7 @@
   <head>
     <script src="js/jquery.js"></script>
     <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
     <script src="js/index.js"></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/reset.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/style.css">
@@ -16,31 +17,13 @@
             <a href="/">menu</a>
             <div class="subnav menu">
               <div class="arrow"></div>
-              <div class="subnav-content">
-                <div class="subnav-pic"></div>
-                <h1>Menu</h1>
-                Lorem sit pellentesque pulvinar ornare sit donec
-              </div>
-              <div class="subnav-content">
-                <div class="subnav-pic"></div>
-                <h1>Ingredients</h1>
-                Lorem sit pellentesque pulvinar ornare sit donec
-              </div>
-              <div class="subnav-content">
-                <div class="subnav-pic"></div>
-                <h1>Nutritional Calculator</h1>
-                Lorem sit pellentesque pulvinar ornare sit donec
-              </div>
-              <div class="subnav-content">
-                <div class="subnav-pic"></div>
-                <h1>Allergy Information</h1>
-                Lorem sit pellentesque pulvinar ornare sit donec
-              </div>
-              <div class="subnav-content">
-                <div class="subnav-pic"></div>
-                <h1>Download Meu</h1>
-                Lorem sit pellentesque pulvinar ornare sit donec
-              </div>
+              <div class="menu-pic">burrito</div>
+              <div class="menu-pic">burrito bowl</div>
+              <div class="menu-pic">crispy taco</div>
+              <div class="menu-pic">soft taco</div>
+              <div class="menu-pic">salad</div>
+              <div class="menu-pic">chips &amp; guac</div>
+              <div class="menu-pic">kid's menu</div>
             </div><!-- /subnav -->
           </li>
           <li><!-- Our Story -->
@@ -157,110 +140,19 @@
       </div>
       <div id="hero">
         <div class="slides_container">
+          <div>
+            <div class="slide-text">
+              <h1>Burrito</h1>
+              Flour tortilla, choice of cilantro-lime rice, pinto or vegetarian black beans, meat (braised carnitas or barbacoa, adobo-marinated and grilled chicken or steak) or guacamole, salsa and cheese or sour cream.
+              <div class="order-now">order now</div>
+            </div>
+            <div class="slide"></div>
+          </div>
           <div><img src="img/hero1.gif" alt="" /></div>
           <div><img src="img/hero1.gif" alt="" /></div>
           <div><img src="img/hero1.gif" alt="" /></div>
         </div>
       </div><!-- /hero -->
-      <div id="sticky-subnav">
-        <ul id="subnav">
-          <li>near you</li>
-          <li>from the test kitchen</li>
-          <li>events</li>
-          <li>the chipotle story</li>
-        </ul>
-      </div>
-      <div id="near-you-container">
-        <h1>Near You</h1>
-        <form>
-          <input type="text">
-          <input type="button" value="GO">
-        </form>
-        <h4>Not right? Enter your postcode, city or country</h4>
-        <h2>nearest chipotle:</h2>
-        <h3>283 Washington Street<br/>Boston, MA 02108</h3>
-        <h3>Phone: 617.939.0988<br/>Fax: 617.227.1737</h3>
-        <h3>Hours: Mon-Sun 11am-10pm</h3>
-        <a href="/">Get Directions ></a>
-        <a href="/"> Order Now ></a>
-      </div><!-- /near-you-container -->
-      <div id="photogroup1">
-        <div id="photo1"></div>
-        <div id="photo2"></div>
-        <img src="img/map1.jpg" alt="" id="map1" />
-      </div>
-      <div id="photo3"></div>
-      <div class="line"></div>
-      <span class="div-header">From The Test Kitchen</span>
-      <div class="photo4"></div>
-      <div id="photo5"></div>
-      <div class="photo4"></div>
-      <div class="line"></div>
-      <span class="div-header">Events</span>
-      <div class="photo6"></div>
-      <div id="event-text">
-        Cultivate Festival
-        Food, Ideas & Music - Denver
-      </div>
-      <div id="photogroup2">
-        <div class="photo7"></div>
-        <div class="photo7"></div>
-      </div>
-      <div class="photo6"></div>
-      <div class="line"></div>
-      <span class="div-header">The Chipotle Store</span>
-      <div id="hero2">
-        <div class="slides_container">
-          <div><img src="img/hero2.gif" alt="" /></div>
-          <div><img src="img/hero2.gif" alt="" /></div>
-          <div><img src="img/hero2.gif" alt="" /></div>
-        </div>
-      </div><!-- /hero2 -->
-      <div id="footer-container">
-        <div id="top">
-          <div class="thirds">
-            <h1>Stay Connected</h1>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-          </div>
-          <div class="vdiv"></div>
-          <div class="thirds">
-            <h1>Talk To Us</h1>
-            You can try our FAQs or you can email us
-            <div class="button">FAQ</div>
-            <div class="button">Email Us</div>
-          </div>
-          <div class="vdiv"></div>
-          <div class="thirds">
-            <h1>Email Sign Up</h1>
-            We'll send you news, product info & events.
-            <form>
-              <input type="text" placeholder="Enter your email address">
-              <input type="button" value="GO">
-            </form>
-          </div>
-        </div>
-        <div class="line"></div>
-        <div id="bottom">
-          <div class="quarters">
-            <h1>Near You</h1>
-          </div>
-          <div class="quarters">
-            <h1>About Us</h1>
-          </div>
-          <div class="quarters">
-            <h1>Our Other Sites</h1>
-          </div>
-          <div class="quarters">
-            <h1>Services</h1>
-          </div>
-        </div>
-      </div><!-- /footer-container -->
-    </div><!-- /container-main -->
+    </div><!-- /container-buzz -->
   </body>
 </html>
