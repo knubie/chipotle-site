@@ -3,25 +3,158 @@
   <head>
     <script src="js/jquery.js"></script>
     <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
     <script src="js/index.js"></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/reset.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/style.css">
   </head>
   <body>
-    <div id="container">
+    <div id="container-main">
       <div id="header-nav">
         <div id="logo"></div>
         <ul id="nav">
-          <li>menu</li>
-          <li>our story</li>
-          <li>experience</li>
-          <li>buzz</li>
-          <li>find a chipotle</li>
+          <li><!-- Menu -->
+            <a href="/">menu</a>
+            <div class="subnav menu">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Menu</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Ingredients</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Nutritional Calculator</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Allergy Information</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Download Meu</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div><!-- /subnav -->
+          </li>
+          <li><!-- Our Story -->
+            <a href="/">our story</a>
+            <div class="subnav story">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food With Integrity</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>FWI Roadmap</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Steve's Story</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food Facts</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div><!-- /subnav -->
+          </li>
+          <li><!-- Experience -->
+            <a href="/">experience</a>
+            <div class="subnav experience">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Chipotle TV</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Music</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Games</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Mobile</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Magazine</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div>
+          </li>
+          <li><!-- Buzz -->
+            <a href="/">buzz</a>
+            <div class="subnav buzz">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Events &amp; Community</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Culinary Stories</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Promotions</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div>
+          </li>
+          <li><!-- Find A Chipotle -->
+            <a href="/">find a chipotle</a>
+            <div class="subnav find">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food With Integrity</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>FWI Roadmap</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Steve's Story</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food Facts</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div>
+          </li>
         </ul>
-        <div id="order-now">order now</div>
-        <div id="contact"></div>
-        <div id="search-button"></div>
-        <a href="/" id="espanol">En espa&ntilde;ol</a>
+        <div id="buttons">
+          <div id="order-now">order now</div>
+          <div id="contact"></div>
+          <div id="search-button"></div>
+          <a href="/" id="espanol">En espa&ntilde;ol</a>
+        </div>
       </div>
       <div id="hero">
         <div class="slides_container">
@@ -65,6 +198,276 @@
       <div class="photo4"></div>
       <div class="line"></div>
       <span class="div-header">Events</span>
-    </div><!-- /container -->
+      <div class="photo6"></div>
+      <div id="event-text">
+        Cultivate Festival
+        Food, Ideas & Music - Denver
+      </div>
+      <div id="photogroup2">
+        <div class="photo7"></div>
+        <div class="photo7"></div>
+      </div>
+      <div class="photo6"></div>
+      <div class="line"></div>
+      <span class="div-header">The Chipotle Store</span>
+      <div id="hero2">
+        <div class="slides_container">
+          <div><img src="img/hero2.gif" alt="" /></div>
+          <div><img src="img/hero2.gif" alt="" /></div>
+          <div><img src="img/hero2.gif" alt="" /></div>
+        </div>
+      </div><!-- /hero2 -->
+      <div id="footer-container">
+        <div id="top">
+          <div class="thirds">
+            <h1>Stay Connected</h1>
+            <div class="social-button"></div>
+            <div class="social-button"></div>
+            <div class="social-button"></div>
+            <div class="social-button"></div>
+            <div class="social-button"></div>
+            <div class="social-button"></div>
+            <div class="social-button"></div>
+          </div>
+          <div class="vdiv"></div>
+          <div class="thirds">
+            <h1>Talk To Us</h1>
+            You can try our FAQs or you can email us
+            <div class="button">FAQ</div>
+            <div class="button">Email Us</div>
+          </div>
+          <div class="vdiv"></div>
+          <div class="thirds">
+            <h1>Email Sign Up</h1>
+            We'll send you news, product info & events.
+            <form>
+              <input type="text" placeholder="Enter your email address">
+              <input type="button" value="GO">
+            </form>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div id="bottom">
+          <div class="quarters">
+            <h1>Near You</h1>
+          </div>
+          <div class="quarters">
+            <h1>About Us</h1>
+          </div>
+          <div class="quarters">
+            <h1>Our Other Sites</h1>
+          </div>
+          <div class="quarters">
+            <h1>Services</h1>
+          </div>
+        </div>
+      </div><!-- /footer-container -->
+    </div><!-- /container-main -->
+    <div id="container-buzz">
+      <div id="header-nav">
+        <div id="logo"></div>
+        <ul id="nav">
+          <li><!-- Menu -->
+            <a href="/">menu</a>
+            <div class="subnav menu">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Menu</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Ingredients</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Nutritional Calculator</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Allergy Information</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Download Meu</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div><!-- /subnav -->
+          </li>
+          <li><!-- Our Story -->
+            <a href="/">our story</a>
+            <div class="subnav story">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food With Integrity</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>FWI Roadmap</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Steve's Story</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food Facts</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div><!-- /subnav -->
+          </li>
+          <li><!-- Experience -->
+            <a href="/">experience</a>
+            <div class="subnav experience">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Chipotle TV</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Music</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Games</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Mobile</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Magazine</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div>
+          </li>
+          <li><!-- Buzz -->
+            <a href="/">buzz</a>
+            <div class="subnav buzz">
+              <div class="arrow"></div>
+              <div class="filters">
+                <a class="filter" data-filter="all" href="javascript:void(0)">
+                  <div class="checkbox"></div>
+                  show all
+                </a>
+              </div>
+              <div class="filters">
+                <a class="filter" data-filter="one" href="javascript:void(0)">
+                  <div class="checkbox"></div>
+                  events &amp; community
+                </a>
+              </div>
+              <div class="filters">
+                <a class="filter" data-filter="two" href="javascript:void(0)">
+                  <div class="checkbox"></div>
+                  culinary stories
+                </a>
+              </div>
+              <div class="filters">
+                <a class="filter" data-filter="three" href="javascript:void(0)">
+                  <div class="checkbox"></div>
+                  promotions
+                </a>
+              </div>
+              <div id="filter">
+                filter&darr;
+                <div id="filter-out">
+                  <div class="filter-box">
+                    videos
+                  </div>
+                  <div class="filter-box">
+                    photos
+                  </div>
+                  <div class="filter-box">
+                    music
+                  </div>
+                  <div class="filter-box">
+                    recipes
+                  </div>
+                  <div class="filter-box">
+                    cultivate
+                  </div>
+                  <div class="filter-box">
+                    lorem
+                  </div>
+                  <div class="filter-box">
+                    ipsum
+                  </div>
+                  <div class="filter-box">
+                    farmer
+                  </div>
+                  <div class="filter-box">
+                    market tour
+                  </div>
+                  <div class="filter-box">
+                    festival
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><!-- Find A Chipotle -->
+            <a href="/">find a chipotle</a>
+            <div class="subnav find">
+              <div class="arrow"></div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food With Integrity</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>FWI Roadmap</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Steve's Story</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Food Facts</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div id="buttons">
+          <div id="order-now">order now</div>
+          <div id="contact"></div>
+          <div id="search-button"></div>
+          <a href="/" id="espanol">En espa&ntilde;ol</a>
+        </div>
+      </div>
+      <div id="buzz-masonry">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+      </div>
+    </div><!-- /container-buzz -->
   </body>
 </html>
