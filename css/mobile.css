@@ -45,5 +45,11 @@
     display: block;
     padding-left: 10px;
   }
+  #buttons a {
+    margin-right: 2px;
+  }
+  #buttons {
+    right: 4px;
+  }
 }
 

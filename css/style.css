@@ -189,6 +189,11 @@ a {
 #sticky-subnav {
   text-align: center;
 }
+#sticky-subnav .top {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
 #subnav li {
   display: inline;
   margin-right: 17px;
@@ -424,6 +429,9 @@ a {
   vertical-align: top;
   text-align: center;
 }
+#footer-container #bottom {
+  vertical-align: top;
+}
 #footer-container .thirds {
   width: 330px;
   display: inline-block;
@@ -432,11 +440,23 @@ a {
   margin-top: 50px;
 }
 #footer-container .quarters {
-  width: 150px;
+  width: 215px;
   display: inline-block;
   margin: 30px 50px;
   text-align: top;
-  margin: 20px 50px;
+  margin: 20px 0;
+  vertical-align: top;
+}
+#footer-container .quarters:nth-child(1) {
+  margin-left: 35px;
+}
+#footer-container .quarters ul li {
+  color: #b8afa4;
+  line-height: 13px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 13px;
 }
 #footer-container #top .thirds h1, #footer-container #bottom .quarters h1 {
   font-size: 18px;
@@ -455,6 +475,39 @@ a {
   padding-top: 5px;
   box-sizing: border-box;
   margin: 0 6px;
+}
+#footer-container .thirds .email {
+  text-align: left;
+  width: 230px;
+}
+#footer-container .thirds .email input {
+  border: 0;
+  background: transparent;
+  font-family: 'Francois One', sans-serif;
+  font-size: 14px;
+  color: #b8afa4;
+}
+#footer-container .thirds .email input[type="text"] {
+  width: 200px;
+  margin-bottom: -4px;
+}
+#footer-container .thirds .email input[type="button"],
+#footer-container .quarters .location input[type="button"] {
+  background-image: url('../img/near-you-arrow.png');
+  width: 16px;
+  height: 14px;
+}
+#footer-container .quarters .location input[type="text"] {
+  width: 194px;
+  margin-bottom: -4px;
+}
+#footer-container .quarters .location input {
+  border: 0;
+  background: transparent;
+  font-family: 'Francois One', sans-serif;
+  font-size: 18px;
+  color: #b8afa4;
+  text-transform: uppercase;
 }
 .vdiv {
   border-right: 1px solid #6c5c54;
