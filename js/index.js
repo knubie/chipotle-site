@@ -1,9 +1,19 @@
 $(function(){
-  $("#hero").slides();
+  $("#hero").slides({
+    generatePagination: false,
+    paginationClass: 'menu-pagination',
+    play: 5000
+  });
   $("#hero2").slides();
+  $("#mobile-hero").slides();
+  $("#menu-hero").slides({
+    generatePagination: false,
+    paginationClass: 'menu-pagination',
+    play: 5000
+  });
 
   $(document).scroll(function(){
-    if ($(document).scrollTop() >= 533) {
+    if ($(document).scrollTop() >= 492) {
       $("#sticky-subnav").css("position", "fixed");
       $("#hero").css("margin-bottom", "35px");
     } else {

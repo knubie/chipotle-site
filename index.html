@@ -6,6 +6,9 @@
     <script src="js/index.js"></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/reset.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/style.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/mobile.css">
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <div id="container">
@@ -101,7 +104,7 @@
             </div>
           </li>
           <li><!-- Buzz -->
-            <a href="buzz.html">buzz</a>
+            <a href="/">buzz</a>
             <div class="subnav buzz">
               <div class="arrow"></div>
               <div class="subnav-content">
@@ -149,89 +152,125 @@
           </li>
         </ul>
         <div id="buttons">
-          <div id="order-now">order now</div>
-          <div id="contact"></div>
-          <div id="search-button"></div>
+          <a href="/"><img src="img/header-menu/buttons/find.png" id="find-button"/></a>
+          <a href="/"><img src="img/header-menu/buttons/account.png" id="account-button"/></a>
+          <a href="/"><img src="img/header-menu/buttons/search.png" id="search-button"/></a>
+          <a href="/"><img src="img/header-menu/buttons/order.png" id="oder-button"/></a>
           <a href="/" id="espanol">En espa&ntilde;ol</a>
         </div>
       </div>
       <div id="hero">
         <div class="slides_container">
+          <div><img src="img/heros/hero1.jpg" alt="" /></div>
+          <div><img src="img/heros/hero2.jpg" alt="" /></div>
+          <div><img src="img/heros/hero3.jpg" alt="" /></div>
+        </div>
+      </div><!-- /hero -->
+      <div id="mobile-hero">
+        <div class="slides_container">
           <div><img src="img/hero1.gif" alt="" /></div>
           <div><img src="img/hero1.gif" alt="" /></div>
           <div><img src="img/hero1.gif" alt="" /></div>
         </div>
-      </div><!-- /hero -->
+      </div><!-- /mobile-hero -->
       <div id="sticky-subnav">
         <ul id="subnav">
           <li>near you</li>
-          <li>from the test kitchen</li>
-          <li>events</li>
-          <li>the chipotle story</li>
+          <li>what's happning</li>
+          <li>the chipotle store</li>
         </ul>
       </div>
+      <div class="near-you collapsable">near you</div>
       <div id="near-you-container">
-        <h1>Near You</h1>
-        <form>
-          <input type="text">
-          <input type="button" value="GO">
-        </form>
-        <h4>Not right? Enter your postcode, city or country</h4>
-        <h2>nearest chipotle:</h2>
-        <h3>283 Washington Street<br/>Boston, MA 02108</h3>
-        <h3>Phone: 617.939.0988<br/>Fax: 617.227.1737</h3>
-        <h3>Hours: Mon-Sun 11am-10pm</h3>
-        <a href="/">Get Directions ></a>
-        <a href="/"> Order Now ></a>
-      </div><!-- /near-you-container -->
-      <div id="photogroup1">
-        <div id="photo1"></div>
-        <div id="photo2"></div>
-        <img src="img/map1.jpg" alt="" id="map1" />
-      </div>
-      <div id="photo3"></div>
-      <div class="line"></div>
-      <span class="div-header">From The Test Kitchen</span>
-      <div class="photo4"></div>
-      <div id="photo5"></div>
-      <div class="photo4"></div>
-      <div class="line"></div>
-      <span class="div-header">Events</span>
-      <div class="photo6"></div>
-      <div id="event-text">
-        Cultivate Festival
-        Food, Ideas & Music - Denver
-      </div>
-      <div id="photogroup2">
-        <div class="photo7"></div>
-        <div class="photo7"></div>
-      </div>
-      <div class="photo6"></div>
-      <div class="line"></div>
-      <span class="div-header">The Chipotle Store</span>
-      <div id="hero2">
-        <div class="slides_container">
-          <div><img src="img/hero2.gif" alt="" /></div>
-          <div><img src="img/hero2.gif" alt="" /></div>
-          <div><img src="img/hero2.gif" alt="" /></div>
+        <img class="sec-header" src="img/near-you.png" alt=""/>
+        <div id="location">
+          <h1>New York, NY</h1>
+          <img class="arrow" src='img/near-you-arrow.png' alt=""/>
+          <img src='img/dotted-line.png' alt=""/>
+          <span class="not-right">Not right? Enter your zip code, city or country</span>
+          <img src="img/near-you-map.jpg" id="near-you-map" alt=""/>
+          <h2>nearest chipotle:</h2>
+          <p>
+            864 Broadway,<br/>
+            New York, NY<br/>
+            (212) 253 - 7860<br/>
+          </p>
+          <p>
+            <b>Hours:</b><br/>
+            Mon-Sun 11am-10pm
+          </p>
+          <a href="#" id="location-directions">directions</a>
+          <a href="#" id="location-order">order now</a>
         </div>
-      </div><!-- /hero2 -->
+        <div class="location-promo">
+          <div id="summerstage"><img src="img/tape.png" alt=""/></div>
+          <a href="#">chipotle at summerstage</a>
+        </div>
+        <div class="location-promo">
+          <div id="wine-festival"><img src="img/tape.png" alt=""/></div>
+          <a href="#">chipotle at new york food &amp; wine festival</a>
+        </div>
+      </div><!-- /near-you-container -->
+      <div id="whats-happening-container">
+        <img class="sec-header" src="img/whats-happening.png" alt=""/>
+        <div class="happenings promos">
+          <img src="img/promotions.png" alt=""/>
+          <h1>promotions</h1>
+          <div class="rule"></div>
+          <div class="body">
+            holidy gift cards are hitting the restaurants novermber 26th. purchaseing $30 will earn you a free burrito.
+          </div>
+          <span class="read-more">read more</span>
+        </div>
+        <div class="happenings culinary-stories">
+          <img src="img/culinary-stories.jpg" alt=""/>
+          <h1>culinary stories</h1>
+          <div class="rule"></div>
+          <div class="body">
+            dinner on the farm &mdash; a farm to table dinner prepared by chipotle culinary manager, nate appleman.
+          </div>
+          <span class="read-more">read more</span>
+        </div>
+        <div class="happenings events-community">
+          <img src="img/events-community.jpg" alt=""/>
+          <h1>events &amp; community</h1>
+          <div class="rule"></div>
+          <div class="body">
+            chipotle presents food day 2012 at the denver botanic gardens
+          </div>
+          <span class="read-more">read more</span>
+        </div>
+        <div class="happenings farmer-stories">
+          <img src="img/farmer-stories.jpg" alt=""/>
+          <h1>farmer stories</h1>
+          <div class="rule"></div>
+          <div class="body">
+            all of our dairy is now 100% pasture raised. meet larry peter, of petaluma creamery, who helps make this possible.
+          </div>
+          <span class="read-more">read more</span>
+        </div>
+      </div><!-- /whats-happening-container -->
+      <div id="chipotle-store-container">
+        <img src="img/store1.jpg" alt=""/>
+        <img src="img/store2.jpg" alt=""/>
+        <img src="img/store3.jpg" alt=""/>
+        <img src="img/store4.jpg" alt=""/>
+        <a href="#">shop our gear store</a>
+      </div><!-- /chipotle-store-container -->
       <div id="footer-container">
         <div id="top">
           <div class="thirds">
             <h1>Stay Connected</h1>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
-            <div class="social-button"></div>
+            <img src="img/facebook.png" alt=""/>
+            <img src="img/twitter.png" alt=""/>
+            <img src="img/pinterest.png" alt=""/>
+            <img src="img/youtube.png" alt=""/>
+            <img src="img/google.png" alt=""/>
+            <img src="img/foursquare.png" alt=""/>
           </div>
           <div class="vdiv"></div>
           <div class="thirds">
             <h1>Talk To Us</h1>
-            You can try our FAQs or you can email us
             <div class="button">FAQ</div>
             <div class="button">Email Us</div>
           </div>
@@ -259,6 +298,8 @@
           <div class="quarters">
             <h1>Services</h1>
           </div>
+        </div>
+        <div id="localize">
         </div>
       </div><!-- /footer-container -->
     </div><!-- /container-main -->
