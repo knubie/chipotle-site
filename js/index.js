@@ -22,12 +22,14 @@ $(function(){
     }
   });
 
-  $('#buzz-masonry').masonry({
-    itemSelector: '.box',
-    columnWidth: 332,
-    gutterWidth: 13,
-    isAnimated: true
-  });
+  if ($('#buzz-masonry').length != 0) {
+    $('#buzz-masonry').masonry({
+      itemSelector: '.box',
+      columnWidth: 332,
+      gutterWidth: 13,
+      isAnimated: true
+    });
+  }
 
   $('.filter').click(function() {
     $('.checkbox').css('background-color', '#FFFFFF');
@@ -38,5 +40,11 @@ $(function(){
     });
   });
 
+  $(".subnav-link").click(function() {
+    var that = this;
+     $('html, body').animate({
+       scrollTop: $("#" + $(that).attr('data-target')).offset().top
+     }, 500);
+   });
 
 });

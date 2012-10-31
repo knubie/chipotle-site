@@ -6,6 +6,7 @@
     <script src="js/index.js"></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/reset.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/style.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/tablet.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/mobile.css">
     <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -175,9 +176,9 @@
       </div><!-- /mobile-hero -->
       <div id="sticky-subnav">
         <ul id="subnav">
-          <li>near you</li>
-          <li>what's happning</li>
-          <li>the chipotle store</li>
+          <li><a class='subnav-link' data-target="near-you-container" href="javascript:void(0)">near you</a></li>
+          <li><a class='subnav-link' data-target="whats-happening-container" href="javascript:void(0)">what's happning</a></li>
+          <li><a class='subnav-link' data-target="chipotle-store-container" href="javascript:void(0)">the chipotle store</a></li>
         </ul>
         <a href="#" class="top">top</a>
       </div>
@@ -252,10 +253,12 @@
         </div>
       </div><!-- /whats-happening-container -->
       <div id="chipotle-store-container">
-        <img src="img/store1.jpg" alt=""/>
-        <img src="img/store2.jpg" alt=""/>
-        <img src="img/store3.jpg" alt=""/>
-        <img src="img/store4.jpg" alt=""/>
+        <img src="img/chipotle-store.png" alt=""/>
+        <br/>
+        <img class="store-pic" src="img/store1.jpg" alt=""/>
+        <img class="store-pic" src="img/store2.jpg" alt=""/>
+        <img class="store-pic" src="img/store3.jpg" alt=""/>
+        <img class="store-pic" src="img/store4.jpg" alt=""/>
         <a href="#">shop our gear store</a>
       </div><!-- /chipotle-store-container -->
       <div id="footer-container">

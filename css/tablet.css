@@ -1,0 +1,17 @@
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #container {
+    width: 768px;
+  }
+  #near-you-container .location-promo:nth-child(2) {
+    display: none;
+  }
+  #header-nav #nav li:nth-child(5) {
+    display: none;
+  }
+  #whats-happening-container .happenings:nth-child(4) {
+    display: none;
+  }
+  #chipotle-store-container .store-pic:nth-child(4) {
+    display: none;
+  }
+}
