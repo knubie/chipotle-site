@@ -116,7 +116,13 @@ a {
 #buttons {
   position: absolute;
   top: 4px;
-  right: 30px;
+  right: 15px;
+}
+#buttons #espanol {
+  margin-right: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  color: #54392d;
 }
 #buttons a {
   vertical-align: top;
@@ -203,7 +209,7 @@ a {
  * ----------------------------------
 */
 #near-you-container {
-  width: 1024px;
+  width: 100%;
   box-sizing: border-box;
   padding: 30px 23px 55px 23px;
   background-image: url('../img/paper-bg.jpg');
@@ -367,6 +373,9 @@ a {
   text-align: center;
   background-image: url('../img/linen-bg.jpg');
   padding: 50px 0 30px 0;
+}
+#chipotle-store-container #store-header {
+  margin-bottom: 30px;
 }
 #chipotle-store-container a {
   width: 184px;
