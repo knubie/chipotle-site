@@ -16,10 +16,6 @@
   #nav, #account-button, #espanol, #sticky-subnav, .sec-header {
     display: none;
   }
-  #mobile-hero {
-    width: 100%;
-    display: block;
-  }
   #near-you-container {
     width: 100%;
     padding: 20px 0;
@@ -50,6 +46,16 @@
   }
   #buttons {
     right: 4px;
+  }
+  #hero,
+  #hero .slides_container,
+  #hero .slides_container div {
+    width: 320px;
+    height: 232px;
+  }
+  #hero .slides_container div img {
+    width: 546px;
+    margin-left: -115px;
   }
 }
 

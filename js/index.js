@@ -1,7 +1,6 @@
 $(function(){
   $("#hero").slides({
-    generatePagination: false,
-    paginationClass: 'menu-pagination',
+    paginationClass: 'hero-pagination',
     play: 5000
   });
   $("#hero2").slides();
@@ -39,6 +38,12 @@ $(function(){
       $('#buzz-masonry').masonry('reload');
     });
   });
+
+  $('.top').click(function() {
+     $('html, body').animate({
+       scrollTop: 0
+     }, 500);
+   });
 
   $(".subnav-link").click(function() {
     var that = this;

@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="js/jquery.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     <script src="js/slides.min.jquery.js"></script>
     <script src="js/index.js"></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/reset.css">
@@ -157,7 +158,7 @@
           <a href="/"><img src="img/header-menu/buttons/account.png" id="account-button"/></a>
           <a href="/"><img src="img/header-menu/buttons/search.png" id="search-button"/></a>
           <a href="/"><img src="img/header-menu/buttons/order.png" id="oder-button"/></a>
-          <a href="/" id="espanol">En espa&ntilde;ol</a>
+          <a href="/" id="espanol">en espa&ntilde;ol</a>
         </div>
       </div>
       <div id="hero">
@@ -167,20 +168,13 @@
           <div><img src="img/heros/hero3.jpg" alt="" /></div>
         </div>
       </div><!-- /hero -->
-      <div id="mobile-hero">
-        <div class="slides_container">
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-        </div>
-      </div><!-- /mobile-hero -->
       <div id="sticky-subnav">
         <ul id="subnav">
           <li><a class='subnav-link' data-target="near-you-container" href="javascript:void(0)">near you</a></li>
           <li><a class='subnav-link' data-target="whats-happening-container" href="javascript:void(0)">what's happning</a></li>
           <li><a class='subnav-link' data-target="chipotle-store-container" href="javascript:void(0)">the chipotle store</a></li>
         </ul>
-        <a href="#" class="top">top</a>
+        <a href="javascript:void(0)" class="top">top</a>
       </div>
       <div class="near-you collapsable">near you</div>
       <div id="near-you-container">
@@ -208,7 +202,7 @@
           <div id="summerstage"><img src="img/tape.png" alt=""/></div>
           <a href="#">chipotle at summerstage</a>
         </div>
-        <div class="location-promo">
+        <div class="location-promo second">
           <div id="wine-festival"><img src="img/tape.png" alt=""/></div>
           <a href="#">chipotle at new york food &amp; wine festival</a>
         </div>
@@ -275,12 +269,12 @@
           <div class="vdiv"></div>
           <div class="thirds">
             <h1>Talk To Us</h1>
-            <div class="button">FAQ</div>
-            <div class="button">Email Us</div>
+            <a href="#" class="button">FAQ</a>
+            <a href="#" class="button">Email Us</a>
           </div>
           <div class="vdiv"></div>
           <div class="thirds">
-            <h1>Email Sign Up</h1>
+            <h1>subscribe to our emails</h1>
             <form class="email">
               <input type="text" placeholder="Enter your email address">
               <input type="button">

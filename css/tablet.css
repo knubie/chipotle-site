@@ -1,8 +1,8 @@
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   #container {
     width: 768px;
   }
-  #container #near-you-container .location-promo:nth-child(2) {
+  #container #near-you-container .location-promo.second {
     display: none;
   }
   #header-nav #nav li:nth-child(5) {
@@ -18,12 +18,26 @@
     margin-right: 6px;
   }
   #top .thirds:nth-child(1) {
-    width: 215px;
-  }
-  #top .thirds:nth-child(2) {
-    width: 274px;
+    width: 212px;
+    padding: 0 36px;
+    box-sizing: border-box;
   }
   #top .thirds:nth-child(3) {
-    width: 274px;
+    width: 268px;
+  }
+  #top .thirds:nth-child(5) {
+    width: 271px;
+  }
+  #hero,
+  #hero .slides_container,
+  #hero .slides_container div {
+    width: 768px;
+    height: 334px;
+  }
+  #footer-container .quarters:nth-child(1) {
+    margin-left: 50px;
+  }
+  #footer-container .quarters {
+    width: 230px;
   }
 }
