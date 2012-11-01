@@ -186,6 +186,9 @@ a {
   font-size: 16px;
   color: #b8afa4;
 }
+#sticky-subnav a {
+  color: #b8afa4;
+}
 #sticky-subnav {
   text-align: center;
 }
