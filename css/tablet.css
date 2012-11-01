@@ -2,7 +2,7 @@
   #container {
     width: 768px;
   }
-  #near-you-container .location-promo:nth-child(2) {
+  #container #near-you-container .location-promo:nth-child(2) {
     display: none;
   }
   #header-nav #nav li:nth-child(5) {
@@ -13,5 +13,17 @@
   }
   #chipotle-store-container .store-pic:nth-child(4) {
     display: none;
+  }
+  #buttons a {
+    margin-right: 6px;
+  }
+  #top .thirds:nth-child(1) {
+    width: 215px;
+  }
+  #top .thirds:nth-child(2) {
+    width: 274px;
+  }
+  #top .thirds:nth-child(3) {
+    width: 274px;
   }
 }
