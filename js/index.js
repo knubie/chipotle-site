@@ -22,11 +22,13 @@ $(function(){
   });
 
   if ($('#buzz-masonry').length != 0) {
-    $('#buzz-masonry').masonry({
-      itemSelector: '.box',
-      columnWidth: 332,
-      gutterWidth: 13,
-      isAnimated: true
+    $('#buzz-masonry').imagesLoaded(function() {
+      $('#buzz-masonry').masonry({
+        itemSelector: '.box',
+        columnWidth: 230,
+        gutterWidth: 21,
+        isAnimated: true
+      });
     });
   }
 
