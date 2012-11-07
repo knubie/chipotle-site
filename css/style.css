@@ -123,6 +123,8 @@ a {
   font-family: Helvetica, sans-serif;
   font-size: 13px;
   color: #54392d;
+  display: inline-block;
+  margin-top: 11px;
 }
 #buttons a {
   vertical-align: top;
@@ -272,6 +274,8 @@ a {
   display: inline-block;
   border-radius: 3px;
   text-transform: uppercase;
+}
+#location a {
   margin-right: 10px;
   margin-top: 15px;
 }
@@ -580,6 +584,23 @@ a {
   width: 920px;
   margin-bottom: 1px solid #666;
 }
+#locality {
+  background-color: #21140d;
+  height: 45px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
+  color: #685f58;
+  text-transform: uppercase;
+}
+#locality a {
+  color: #b8afa4;
+  margin-left: 15px;
+}
+#locality a.active {
+  text-decoration: underline;
+}
 
 /* Buzz
  * ----------------------------------
@@ -693,7 +714,7 @@ a {
   background-repeat: no-repeat;
   background-position: 370px 0px;
   margin-top: 25px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 #menu-detail #side {
   text-align: center;
@@ -702,6 +723,7 @@ a {
   padding-top: 90px;
   line-height: 18px;
   font-size: 13px;
+  color: #48403a;
 }
 #menu-detail #side h1 {
   font-size: 18px;
@@ -722,7 +744,7 @@ a {
   color: #ac2017;
   font-family: 'Francois One', sans-serif;
   display: block;
-  margin: 10px 0;
+  margin: 20px 0 0 0;
 }
 #menu-detail .bottom-links .arrow {
   width: 0;
@@ -740,6 +762,9 @@ a {
   font-family: 'Francois One', sans-serif;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+#instagram-feed .red-button {
+  margin-top: 15px;
 }
 .down-arrow {
   width: 0;
