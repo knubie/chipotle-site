@@ -132,10 +132,11 @@ a {
 /* Hero Carousels
  * ----------------------------------
 */
-#hero, #menu-hero {
+#hero {
   width: 1024px;
   height: 446px;
   position: relative;
+  overflow: hidden;
 }
 #hero .slides_container, #menu-hero .slides_container {
   width: 1024px;
@@ -262,7 +263,7 @@ a {
   display: inline-block;
   margin-right: 8px;
 }
-#location a {
+#location a, .red-button {
   padding: 7px 11px;
   background-color: #ac2017;
   font-family: 'Francois One' sans-serif;
@@ -533,6 +534,7 @@ a {
   padding-top: 5px;
   box-sizing: border-box;
   margin: 0 6px;
+  text-transform: uppercase;
 }
 #footer-container .thirds .email {
   text-align: left;
@@ -645,142 +647,109 @@ a {
   margin: 8px 22px;
   display: inline-block;
 }
-
-/* Menu
- * ----------------------------------
-*/
-
-.subnav.menu {
-  padding: 15px 0;
+#menu-headline {
+  background: rgba(255,255,255,0.3);
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+  height: 89px;
+  margin-top: -89px;
+  padding-top: 26px;
+  box-sizing: border-box;
+  position: relative;
 }
-.menu-pic {
-  width: 117px;
-  height: 78px;
-  background-color: #E2E4E5;
-  border: 1px solid #C9CACB;
-  margin: 11px;
-  display: inline-block;
-}
-.menu-pic:hover {
-  background-color: #FAFBFB;
-  border: 1px solid #999999;
-}
-.slide {
+#menu-hero {
   width: 1024px;
-  height: 477px;
-  background-color: #E2E4E5;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
 }
-#menu-hero .slides_container .slide-text {
+#menu-hero img {
   position: absolute;
-  top: 81px;
-  left: 23px;
-  width: 300px;
-  color: #858585;
-  line-height: 18px;
+  left: 0;
+  bottom: 0;
 }
-#menu-hero .slides_container .slide-text h1 {
-  font-size: 26px;
-  letter-spacing: -1px;
-  font-weight: bold;
+#menu-content {
+  background-image: url('../img/paper-bg.jpg');
+  text-align: center;
+  padding: 25px 0 25px 0;
+}
+#menu-nav a {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #663d2d;
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
-#menu-hero .slides_container .order-now {
-  width: 94px;
-  height: 24px;
-  box-sizing: border-box;
-  padding-top: 3px;
-  background-color: #FAFBFB;
-  border: 1px solid #666;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 10px;
-}
-#menu-container {
-  text-align: center;
-}
-#menu-head-subhead-container {
-  text-transform: uppercase;
-  width: 650px;
-  margin: 25px auto 30px auto;
-}
-
-#menu-head-subhead-container h1 {
-  font-size: 40px;
-  float: left;
-  margin-top: -4px;
-  margin-right: 4px;
-}
-#menu-head-subhead-container #sub {
-  font-size: 15px;
-}
-.menu-h2 {
-  font-size: 26px;
-  margin: 0 auto;
+#menu-nav a img {
   display: block;
 }
-.menu-body-copy {
-  width: 550px;
-  margin: 0 auto;
-  margin-top: 20px;
+#menu-detail {
+  background-image: url('../img/burrito-image.png');
+  height: 340px;
+  background-repeat: no-repeat;
+  background-position: 370px 0px;
+  margin-top: 25px;
+  margin-bottom: 80px;
 }
-.ingredient-detail {
-  margin-top: 20px;
-  display: inline-block;
-  text-align: left;
-  width: 420px;
-  vertical-align: top;
-  margin-right: 55px;
+#menu-detail #side {
+  text-align: center;
+  width: 220px;
+  margin-left: 166px;
+  padding-top: 90px;
+  line-height: 18px;
+  font-size: 13px;
 }
-.ingredient-detail a {
-  text-decoration: underline;
-}
-.ingredient-detail .photo {
-  width: 420px;
-  height: 248px;
-  background-color: #E2E4E5;
-}
-.ingredient-detail h3 {
+#menu-detail #side h1 {
+  font-size: 18px;
+  color: #663d2d;
+  font-family: 'Francois One', sans-serif;
   text-transform: uppercase;
-  margin: 15px 0;
+  margin-bottom: 10px;
 }
-#ingredient-grid {
-  margin-top: 15px;
+#menu-detail #dotted-line {
+  background-image: url('../img/dotted-line.png');
+  width: 210px;
+  height: 1px;
+  margin: 15px 0 15px 0;
+}
+#menu-detail .bottom-links {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ac2017;
+  font-family: 'Francois One', sans-serif;
+  display: block;
+  margin: 10px 0;
+}
+#menu-detail .bottom-links .arrow {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #ac2017;
   display: inline-block;
-  width: 302px;
-  vertical-align: top;
-  margin-bottom: 20px;
+  margin-left: 5px;
 }
-#ingredient-grid .box {
-  width: 86px;
-  height: 78px;
-  margin: 6px;
-  box-sizing: border-box;
-  background-color: #E2E4E5;
+#instagram-feed h1 {
+  font-size: 18px;
+  color: #663d2d;
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid #fff;
   display: inline-block;
-  bottom: 1px solid #C9CACB;
+  margin-left: 5px;
 }
-#ingredient-grid .box:hover {
-  background-color: #FAFBFB;
-  border: 3px solid #9DA6A8;
-}
-.dig-container {
-  display: inline-block;
-  width: 255px;
-  margin: 20px 25px 60px 25px;
-}
-.dig-box {
-  width: 255px;
-  height: 120px;
-  background-color: #E2E4E5;
-}
-#pics-container {
-  margin-top: 15px;
-}
-#pics-container .pic {
-  width: 167px;
-  height: 190px;
-  background-color: #E2E4E5;
-  display: inline-block;
-}
+
+

@@ -2,11 +2,15 @@
 <html>
   <head>
     <script src="js/jquery.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     <script src="js/slides.min.jquery.js"></script>
-    <script src="js/jquery.masonry.min.js"></script>
     <script src="js/index.js"></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/reset.css">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/style.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/tablet.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="css/mobile.css">
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <div id="container">
@@ -17,15 +21,31 @@
             <a href="/">menu</a>
             <div class="subnav menu">
               <div class="arrow"></div>
-              <ul class="menu-pagination">
-                <li><a href="#0" class="menu-pic">burrito</a></li>
-                <li><a href="#1" class="menu-pic">burrito bowl</a></li>
-                <li><a href="#2" class="menu-pic">crispy taco</a></li>
-                <li><a href="#3" class="menu-pic">soft taco</a></li>
-                <li><a href="#4" class="menu-pic">salad</a></li>
-                <li><a href="#5" class="menu-pic">chips &amp; guac</a></li>
-                <li><a href="#6" class="menu-pic">kid's menu</a></li>
-              </ul>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Menu</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Ingredients</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Nutritional Calculator</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Allergy Information</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
+              <div class="subnav-content">
+                <div class="subnav-pic"></div>
+                <h1>Download Meu</h1>
+                Lorem sit pellentesque pulvinar ornare sit donec
+              </div>
             </div><!-- /subnav -->
           </li>
           <li><!-- Our Story -->
@@ -86,7 +106,7 @@
             </div>
           </li>
           <li><!-- Buzz -->
-            <a href="buzz.html">buzz</a>
+            <a href="/">buzz</a>
             <div class="subnav buzz">
               <div class="arrow"></div>
               <div class="subnav-content">
@@ -134,113 +154,138 @@
           </li>
         </ul>
         <div id="buttons">
-          <div id="order-now">order now</div>
-          <div id="contact"></div>
-          <div id="search-button"></div>
-          <a href="/" id="espanol">En espa&ntilde;ol</a>
+          <a href="/"><img src="img/header-menu/buttons/find.png" id="find-button"/></a>
+          <a href="/"><img src="img/header-menu/buttons/account.png" id="account-button"/></a>
+          <a href="/"><img src="img/header-menu/buttons/search.png" id="search-button"/></a>
+          <a href="/"><img src="img/header-menu/buttons/order.png" id="oder-button"/></a>
+          <a href="/" id="espanol">en espa&ntilde;ol</a>
         </div>
       </div>
       <div id="menu-hero">
-        <div class="slides_container">
-          <div>
-            <div class="slide-text">
-              <h1>Burrito</h1>
-              Flour tortilla, choice of cilantro-lime rice, pinto or vegetarian black beans, meat (braised carnitas or barbacoa, adobo-marinated and grilled chicken or steak) or guacamole, salsa and cheese or sour cream.
-              <div class="order-now">order now</div>
-            </div>
-            <div class="slide"></div>
-          </div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-          <div><img src="img/hero1.gif" alt="" /></div>
-        </div>
+        <img src="img/menu_promo.jpg" alt=""/>
       </div><!-- /hero -->
-      <div id="menu-container">
-        <div id="menu-head-subhead-container">
-          <h1>menu</h1>
-          <div id="sub">
-            our meu isn't long - but it's long on options. start with the basics and customize as needed to build your perfect meal.</div>
+      <div id="menu-headline">
+        <img src="img/menu_headline.png" alt=""/>
+      </div>
+      <div id="menu-content">
+        <div id="menu-nav">
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_burrito.png" alt=""/>
+            burritos
+          </a>
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_bowl.png" alt=""/>
+            bowls
+          </a>
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_taco.png" alt=""/>
+            tacos
+          </a>
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_salad.png" alt=""/>
+            salads
+          </a>
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_kids.png" alt=""/>
+            kid's meals
+          </a>
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_sides.png" alt=""/>
+            sides
+          </a>
+          <a href="#" class="menu-nav-item">
+            <img src="img/menu_nav_drinks.png" alt=""/>
+            drinks
+          </a>
         </div>
-        <h2 class="menu-h2">It's What's Inside That Counts</h2>
-        <div class="menu-body-copy">
-          Great ingredients make great tasting food. Check out all the ingredients you can choose, and check out where it all comes from in the <u>Food With Integrity</u> section.</div>
-        <div class="ingredient-detail">
-          <div class="photo"></div>
-          <h3>chicken</h3>
-          <p>Marinated overnight in our smoky, spicy chipotle pepper adobo, then grilled. The char marks impart a subtle caramelized flavor.</p>
-          <p>When sourcing meat, we work hard to find farmers and ranchers who are doing. <a href="#">FIND OUT MORE</a> ></p>
+        <img src="img/menu-dashed-line.png" alt=""/>
+        <div id="menu-detail">
+          <div id="side">
+            <h1>burrito</h1>
+            <p>Flour tortilla, choice of cilantro-lime rice, pinto or vegetarian black beans, meat (braised carnitas or barbacoa, adobo marinated and grilled chicken or steak) or guacamole, salsa and cheese or sour cream.</p>
+            <div id="dotted-line"></div>
+            <a href="#" class="red-button">order now</a>
+            <a href="#" class="bottom-links">nutrition calculator<div class="arrow"></div><a/>
+            <a href="#" class="bottom-links">allergy information<div class="arrow"></div><a/>
+          </div>
         </div>
-        <div id="ingredient-grid">
-          <!-- row -->
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <!-- row -->
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <!-- row -->
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <!-- row -->
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+        <div id="instagram-feed">
+          <h1>Burrito love on instagram at #chipotleburrito</h1>
+          <img src="img/instagram-pics.png" alt=""/>
+          <br/>
+          <a href="#" class="red-button">more<div class="down-arrow"></div></a>
         </div>
-        <h2 class="menu-h2">Dig In Deeper</h2>
-        <div class="dig-container">
-          <div class="dig-box"></div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit lore dolorr redonstucion.
+      </div><!-- /menu-content -->
+      <div id="footer-container">
+        <div id="top">
+          <div class="thirds">
+            <h1>Stay Connected</h1>
+            <img src="img/facebook.png" alt=""/>
+            <img src="img/twitter.png" alt=""/>
+            <img src="img/pinterest.png" alt=""/>
+            <img src="img/youtube.png" alt=""/>
+            <img src="img/google.png" alt=""/>
+            <img src="img/foursquare.png" alt=""/>
+          </div>
+          <div class="vdiv"></div>
+          <div class="thirds">
+            <h1>Talk To Us</h1>
+            <a href="#" class="button">FAQ</a>
+            <a href="#" class="button">Email Us</a>
+          </div>
+          <div class="vdiv"></div>
+          <div class="thirds">
+            <h1>subscribe to our emails</h1>
+            <form class="email">
+              <input type="text" placeholder="Enter your email address">
+              <input type="button">
+              <img src="img/footer-dashed-line.png" alt=""/>
+            </form>
+          </div>
         </div>
-        <div class="dig-container">
-          <div class="dig-box"></div>
-          No matter what your unique dietary needs are, Chipotle has options for you.
+        <div class="line"></div>
+        <div id="bottom">
+          <div class="quarters">
+            <h1>About Us</h1>
+            <ul>
+              <li>Company</li>
+              <li>Investors</li>
+              <li>Careers</li>
+              <li>California Transparency<br/>in Supply Chain Act</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="quarters">
+            <h1>Our Other Sites</h1>
+            <ul>
+              <li>Chipotle Cultivate Festival</li>
+              <li>Chipotle Cultivate Foundation</li>
+              <li>Chipotle On Campus</li>
+              <li>ShopHouse Southeast Asian<br/>Kitchen</li>
+            </ul>
+          </div>
+          <div class="quarters">
+            <h1>Services</h1>
+            <ul>
+              <li>My Account</li>
+              <li>Order Now</li>
+              <li>How To Order</li>
+              <li>Find a Chipotle</li>
+              <li>Chipotle Gift Cards</li>
+              <li>The Chipotle Store</li>
+            </ul>
+          </div>
+          <div class="quarters">
+            <form class="location">
+              <input type="text" placeholder="New York, NY">
+              <input type="button">
+              <img src="img/footer-dashed-line.png" alt=""/>
+            </form>
+          </div>
         </div>
-        <h2 class="menu-h2">Love Your Food</h2>
-        Send your photo to #chipotlefood in a photo comment on our Facebook fan page, a photo tweet or as a tag on your Instagram photo
-        <div id="pics-container">
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
-          <div class="pic"></div>
+        <div id="localize">
         </div>
-      </div><!-- /menu-container -->
-    </div><!-- /container-buzz -->
+      </div><!-- /footer-container -->
+    </div><!-- /container-main -->
   </body>
 </html>
