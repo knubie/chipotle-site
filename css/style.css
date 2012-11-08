@@ -10,7 +10,7 @@ a {
   color: #666;
 }
 #container {
-  width: 100%;
+  min-width: 1024px;
   margin: 0 auto;
 }
 
@@ -36,19 +36,21 @@ a {
   position: absolute;
   left: 120px;
   top: 15px;
+  width: 100%;
 }
 #nav li {
-  display: inline-block;
   padding-right: 17px;
   text-transform: uppercase;
   height: 38px;
   font-family: 'Francois One', sans-serif;
   font-size: 16px;
+  float: left;
 }
 #nav li a {
   color: #54392d;
 }
 #nav li:hover a {
+  color: #311102;
 }
 #nav li:hover .subnav {
   display: block;
@@ -64,18 +66,28 @@ a {
   background-image: url('../img/paper-bg.jpg');
   width: 100%;
   box-shadow: 0 8px 5px -5px rgba(0,0,0,0.3);
+  padding: 20px;
 }
 #nav li .subnav .subnav-content {
-  margin: 25px 30px;
+  margin: 15px 0;
   text-transform: none;
   font-size: 12px;
   display: inline-block;
   width: 175px;
+  font-size: 11px;
+  font-family: Georgia, serif;
+  color: #54392d;
+  font-style: italic;
+  vertical-align: top;
+}
+.subnav.story .subnav-content {
 }
 #nav li .subnav .subnav-content h1 {
   font-size: 14.5px;
   margin: 10px 0;
   color: #7a6960;
+  font-family: 'Francois One', sans-serif;
+  font-style: normal;
 }
 #nav li .subnav .subnav-content .subnav-pic {
   width: 130px;
@@ -349,6 +361,9 @@ a {
   box-sizing: border-box;
   margin-top: 5px;
   text-align: left;
+}
+.mobile-carousels {
+  display: none;
 }
 #summerstage {
   background-image: url('../img/summerstage.jpg');

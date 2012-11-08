@@ -1,9 +1,9 @@
 #mobile-hero, .collapsable {
   display: none;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   #container {
-    width: 100%;
+    min-width: 320px;
   }
   #logo {
     top: 3px;
@@ -76,6 +76,12 @@
   }
   #footer-container .location-quarter {
     width: 100%;
+  }
+  .full {
+    display: none;
+  }
+  .mobile-carousels {
+    display: block;
   }
 }
 
