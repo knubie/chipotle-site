@@ -1,7 +1,4 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #container {
-    width: 768px;
-  }
   #container #near-you-container .location-promo.second {
     display: none;
   }
@@ -39,5 +36,20 @@
   }
   #footer-container .quarters {
     width: 230px;
+  }
+  #three-quarters {
+    width: 483px;
+    text-align: left;
+    display: inline-block;
+    margin-left: 67px;
+  }
+  #footer-container .quarters:nth-child(1) {
+    margin-left: 0;
+  }
+  #footer-container #bottom .locality-quarter {
+    display: inline-block;
+  }
+  #locality {
+    display: none;
   }
 }

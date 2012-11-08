@@ -57,5 +57,25 @@
     width: 546px;
     margin-left: -115px;
   }
+  #list-button {
+    display: inline-block;
+  }
+  .vdiv {
+    border-right: none;
+    border-bottom: 1px solid #6c5c54;
+    display: block;
+    margin: 30px auto -20px auto;
+    width: 150px;
+    height: 1px;
+  }
+  #footer-container .quarters {
+    width: 138px;
+  }
+  #footer-container #bottom .locality-quarter {
+    display: inline-block;
+  }
+  #footer-container .location-quarter {
+    width: 100%;
+  }
 }
 
