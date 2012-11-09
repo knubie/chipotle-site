@@ -86,6 +86,22 @@
   #buttons #espanol {
     display: none;
   }
+  
+  /* MENU */
+  .mobile {
+    display: inline-block;
+  }
+  .menu-detail {
+    width: 100%;
+    background: none;
+  }
+  .menu-detail .side {
+    margin: 0 auto;
+  }
+  #menu-nav {
+    display: none;
+  }
+
 
   /* BUZZ */
   .double-wide {

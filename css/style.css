@@ -13,6 +13,9 @@ a {
   min-width: 1024px;
   margin: 0 auto;
 }
+.mobile {
+  display: none;
+}
 
 /* Header Navigation
  * ----------------------------------
@@ -803,7 +806,7 @@ a {
 #menu-content {
   background-image: url('../img/paper-bg.jpg');
   text-align: center;
-  padding: 25px 0 25px 0;
+  padding: 25px 0 0 0;
 }
 #menu-nav a {
   display: inline-block;
@@ -818,7 +821,7 @@ a {
 #menu-nav a img {
   display: block;
 }
-#menu-detail {
+.menu-detail {
   background-image: url('../img/burrito-image.png');
   height: 340px;
   background-repeat: no-repeat;
@@ -828,7 +831,7 @@ a {
   margin: 25px auto 120px auto;
   width: 1024px;
 }
-#menu-detail #side {
+.menu-detail .side {
   text-align: center;
   width: 220px;
   margin-left: 166px;
@@ -837,20 +840,20 @@ a {
   font-size: 13px;
   color: #48403a;
 }
-#menu-detail #side h1 {
+.menu-detail .side h1 {
   font-size: 18px;
   color: #663d2d;
   font-family: 'Francois One', sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-#menu-detail #dotted-line {
+.menu-detail .dotted-line {
   background-image: url('../img/dotted-line.png');
   width: 210px;
   height: 1px;
   margin: 15px 0 15px 0;
 }
-#menu-detail .bottom-links {
+.menu-detail .bottom-links {
   text-transform: uppercase;
   font-size: 12px;
   color: #ac2017;
@@ -858,7 +861,7 @@ a {
   display: block;
   margin: 20px 0 0 0;
 }
-#menu-detail .bottom-links .arrow {
+.menu-detail .bottom-links .arrow {
   width: 0;
   height: 0;
   border-top: 4px solid transparent;
@@ -868,14 +871,17 @@ a {
   display: inline-block;
   margin-left: 5px;
 }
-#instagram-feed h1 {
+.instagram-feed {
+  padding-bottom: 30px;
+}
+.instagram-feed h1 {
   font-size: 18px;
   color: #663d2d;
   font-family: 'Francois One', sans-serif;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-#instagram-feed .red-button {
+.instagram-feed .red-button {
   margin-top: 15px;
 }
 .down-arrow {
