@@ -41,10 +41,10 @@
     width: 230px;
   }
   #three-quarters {
-    width: 483px;
+    width: 463px;
     text-align: left;
     display: inline-block;
-    margin-left: 67px;
+    margin-left: 22px;
   }
   #footer-container .quarters:nth-child(1) {
     margin-left: 0;

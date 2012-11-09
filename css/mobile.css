@@ -75,7 +75,14 @@
     display: inline-block;
   }
   #footer-container .location-quarter {
-    width: 100%;
+    width: 320px;
+  }
+  #three-quarters {
+    width: 320px;
+    margin: 0;
+  }
+  #footer-container .thirds .email {
+    margin-left: 29px;
   }
   .full {
     display: none;
@@ -100,6 +107,14 @@
   }
   #menu-nav {
     display: none;
+  }
+  .instagram-feed h1 {
+    width: 250px;
+  }
+  .menu-detail .detail-image {
+    display: block;
+    width: 375px;
+    margin: 0 auto;
   }
 
 

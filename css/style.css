@@ -823,13 +823,15 @@ a {
 }
 .menu-detail {
   background-image: url('../img/burrito-image.png');
-  height: 340px;
   background-repeat: no-repeat;
   background-position: 370px 0px;
   margin-top: 25px;
   margin-bottom: 120px;
-  margin: 25px auto 120px auto;
+  margin: 25px auto 30px auto;
   width: 1024px;
+}
+.menu-detail .detail-image {
+  display: none;
 }
 .menu-detail .side {
   text-align: center;
@@ -872,14 +874,15 @@ a {
   margin-left: 5px;
 }
 .instagram-feed {
-  padding-bottom: 30px;
+  text-align: center;
+  margin-top: 45px;
 }
 .instagram-feed h1 {
   font-size: 18px;
   color: #663d2d;
   font-family: 'Francois One', sans-serif;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 .instagram-feed .red-button {
   margin-top: 15px;

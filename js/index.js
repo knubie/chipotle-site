@@ -32,6 +32,10 @@ $(function(){
     });
   }
 
+  $('.collapsable').click(function() {
+    $(this).next().slideToggle();
+  });
+
   $('.filter').click(function() {
     $('.checkbox').css('background-color', '#FFFFFF');
     $(this).find('.checkbox').css('background-color', '#999999');
