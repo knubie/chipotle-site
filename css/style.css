@@ -19,10 +19,10 @@ a {
 */
 #logo {
   position: absolute;
-  top: 14px;
-  left: 19px;
-  width: 96px;
-  height: 96px;
+  top: 9px;
+  left: 14px;
+  width: 110px;
+  height: 110px;
   background-image: url('../img/logo.png');
   z-index: 99;
 }
@@ -269,6 +269,10 @@ a {
   right: 10px;
   z-index: 99;
 }
+#sticky-subnav .top img {
+  margin: 5px 0 0 5px;
+  vertical-align: top;
+}
 #subnav li {
   display: inline;
   margin-right: 17px;
@@ -362,21 +366,31 @@ a {
   margin-top: 5px;
   text-align: left;
 }
+.location-promo a .right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #54392d;
+  display: inline-block;
+  margin-left: 5px;
+}
 .mobile-carousels {
   display: none;
 }
-#summerstage {
-  background-image: url('../img/summerstage.jpg');
+#snowing {
+  background-image: url('../img/snowing-promo.png');
 }
 #wine-festival {
   background-image: url('../img/wine-festival.jpg');
 }
-#summerstage, #wine-festival {
+#snowing, #wine-festival {
   width: 308px;
   height: 180px;
   text-align: center;
 }
-#summerstage img, #wine-festival img {
+#snowing img, #wine-festival img {
   margin-top: -20px;
 }
 #whats-happening-container {
@@ -680,6 +694,9 @@ a {
 }
 .buzz-filters {
   background-color: rgba(12,2,0,0.4);
+  padding-left: 140px;
+  padding: 26px 140px;
+  position: relative;
 }
 #nav li .buzz {
   background-color: #F5F6F6;
@@ -689,8 +706,40 @@ a {
   margin-left: 17px;
 }
 .filters {
-  margin: 20px 6px;
+  margin: 20px 6px 0 0;
   display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Francois One', sans-serif;
+}
+.filters.red a {
+  color: #88251f;
+}
+.filters.orange a {
+  color: #a95825;
+}
+.filters.blue a {
+  color: #538ca2;
+}
+.filters.tan a {
+  color: #c2ad93;
+}
+.filters.gray a {
+  color: #7a8973;
+}
+.filters.green a {
+  color: #717a3f;
+}
+.filters.maroon a {
+  color: #7e5b4b;
+}
+.filters .checkbox {
+  width: 8px;
+  height: 8px;
+  background-color: #FFF;
+  border: 1px solid #939598;
+  display: inline-block;
+  border-radius: 4px;
 }
 .tweets {
   background-image: url('../img/chipotle-tweets.png');
@@ -699,32 +748,27 @@ a {
   box-sizing: border-box;
   padding: 127px 12px 0 12px;
 }
-.filters .checkbox {
-  width: 11px;
-  height: 11px;
-  background-color: #FFF;
-  border: 1px solid #939598;
-  display: inline-block;
-}
 #filter {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px 20px;
-  height: 100%;
-  background-color: #FFF;
+  bottom: 0;
+  right: 22px;
+  padding: 15px 18px;
+  background-color: #ac2017;
   box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
 }
 #filter-out {
   width: 1024px;
   position: absolute;
-  top: 56px;
+  top: 44px;
   right: 0;
   background-color: #FFF;
   border-bottom: 1px solid #C9CACB;
   display: none;
   padding: 16px 100px;
   box-sizing: border-box;
+  z-index: 99;
 }
 #filter:hover #filter-out {
   display: block;

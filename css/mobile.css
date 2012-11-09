@@ -83,5 +83,19 @@
   .mobile-carousels {
     display: block;
   }
+  #buttons #espanol {
+    display: none;
+  }
+
+  /* BUZZ */
+  .double-wide {
+    width: 230px;
+  }
+  .box img {
+    max-width: 214px;
+  }
+  .filters, .buzz-headline {
+    display: none;
+  }
 }
 
