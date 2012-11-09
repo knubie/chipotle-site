@@ -826,8 +826,7 @@ a {
   background-repeat: no-repeat;
   background-position: 370px 0px;
   margin-top: 25px;
-  margin-bottom: 120px;
-  margin: 25px auto 30px auto;
+  margin: 25px auto 0 auto;
   width: 1024px;
 }
 .menu-detail .detail-image {
@@ -876,6 +875,7 @@ a {
 .instagram-feed {
   text-align: center;
   margin-top: 45px;
+  padding-bottom: 30px;
 }
 .instagram-feed h1 {
   font-size: 18px;
