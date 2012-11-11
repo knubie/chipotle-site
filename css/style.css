@@ -41,17 +41,20 @@ a {
   top: 15px;
   width: 100%;
 }
-#nav li, #buttons li {
+#nav li, li.buttons {
   padding-right: 17px;
   text-transform: uppercase;
   height: 38px;
   font-family: 'Francois One', sans-serif;
   font-size: 16px;
 }
+li.buttons {
+  margin-top: -9px;
+}
 #nav li {
   float: left;
 }
-#buttons li {
+#nav li.buttons {
   float: right;
 }
 #nav li a {
@@ -61,11 +64,11 @@ a {
   color: #311102;
 }
 #nav li:hover .subnav,
-#buttons li:hover .subnav {
+li.buttons:hover .subnav {
   display: block;
 }
 #nav li .subnav,
-#buttons li .subnav {
+li.buttons .subnav {
   position: absolute;
   z-index: 9;
   display: none;
@@ -77,10 +80,10 @@ a {
   padding: 15px 0 15px 0;
 }
 #nav li .subnav {
-  top: 28px;
+  top: 31px;
   left: -140px;
 }
-#buttons li .subnav {
+li.buttons .subnav {
   top: 42px;
   left: 15px;
 }
@@ -191,61 +194,80 @@ a {
   width: 100%;
   text-align: right;
 }
-#buttons #espanol {
+#espanol {
   margin-right: 0;
   font-family: Helvetica, sans-serif;
   font-size: 13px;
   color: #54392d;
   display: inline-block;
   margin-top: 11px;
+  margin-right: 140px;
 }
-#buttons a {
-  vertical-align: top;
-  margin-right: 12px;
-}
-#buttons .location .dashed-line {
+.buttons .subnav .dashed-line {
   display: block;
   width: 300px;
   height: 1px;
   background-image: url('../img/dashed-line-tile.png');
 }
-.subnav.location-finder #left,
-.subnav.location-finder #right,
-.subnav.location-finder #divider {
+.subnav #left,
+.subnav #right,
+.subnav #divider {
   text-align: left;
   display: inline-block;
   vertical-align: top;
 }
-.subnav.location-finder #left,
-.subnav.location-finder #right {
+.subnav #left,
+.subnav #right {
   margin-top: 10px;
 }
 .subnav.location-finder #divider {
   margin: 0 40px;
 }
-.subnav.location-finder {
+.subnav.location-finder,
+.subnav.account,
+.subnav.search {
   font-family: Georgia, sans-serif;
   color: #54392d;
   font-style: italic;
   font-size: 14px;
   text-transform: none;
 }
-#buttons .location .left-form {
+#account-container {
+  width: 900px;
+  margin: 0 auto;
+  padding-left: 104px;
+}
+#create-account {
+  background-color: #dbd5cd;
+  padding: 17px;
+  font-family: Helvetica, sans-serif;
+  color: #54392d;
+  font-style: normal;
+  font-size: 14px;
+  text-align: left;
+  float: right;
+}
+#create-account a {
+  color: #ac2017;
+  display: block;
+  border-radius: 3px;
+}
+.buttons .subnav-form {
   margin-top: 15px;
 }
-#buttons .location .left-form input[type="button"] {
+.buttons .subnav-form input[type="button"] {
   background-color: #ac2017;
   padding: 5px 10px;
   border-radius: 3px;
   color: #FFF;
   font-size: 15px;
 }
-#buttons .location .left-form input[type="text"] {
+.buttons .subnav-form input[type="text"] {
   width: 297px;
   margin-bottom: -4px;
   color: #54392d;
 }
-#buttons .location .left-form input {
+.buttons .subnav-form input {
   border: 0;
   background: transparent;
   font-family: 'Francois One', sans-serif;
@@ -253,9 +275,21 @@ a {
   color: #b8afa4;
   text-transform: uppercase;
 }
-#footer-container .quarters .location input::-webkit-input-placeholder {
-  color: #b8afa4;
+.subnav-form input::-webkit-input-placeholder {
+  color: #b8b0a8;
 }
+.buttons .search-form input[type="button"] {
+  background-image: url('../img/magnifying-glass.png');
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 29px;
+  background-position: 8px 5px;
+}
+.buttons .search-form .dashed-line,
+.buttons .search-form input[type="text"] {
+  width: 570px;
+}
+
 
 /* Hero Carousels
  * ----------------------------------
@@ -518,9 +552,11 @@ a {
   padding: 40px 0;
   text-align: center;
 }
+#whats-happening-container .happenings {
+  height: 430px;
+}
 .happenings {
   width: 230px;
-  height: 430px;
   padding: 10px 8px;
   box-sizing: border-box;
   background-color:rgba(0,0,0,0.5);
@@ -559,7 +595,12 @@ a {
   margin-top: 15px;
   display: block;
 }
-
+.happenings .small-text {
+  color: #FFF;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  margin-top: 10px;
+}
 .happenings.promos h1 {
   color: #a95825;
 }
@@ -583,6 +624,18 @@ a {
 }
 .happenings.farmer-stories .rule {
   background-color: #c2ae93;
+}
+.happenings.sustainability h1 {
+  color: #717b3f;
+}
+.happenings.sustainability .rule {
+  background-color: #717b3f;
+}
+.happenings.fun-stuff h1 {
+  color: #7f5b4b;
+}
+.happenings.fun-stuff .rule {
+  background-color: #7f5b4b;
 }
 #chipotle-store-container {
   text-align: center;

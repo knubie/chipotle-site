@@ -17,7 +17,7 @@
       <div id="header-nav">
         <a href="index.html" id="logo"></a>
         <ul id="nav">
-          <li><!-- Menu -->
+          <li class="main-nav"><!-- Menu -->
             <a href="menu.html">menu</a>
             <div class="subnav menu">
               <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
@@ -49,7 +49,7 @@
               </div>
             </div><!-- /subnav -->
           </li>
-          <li><!-- Our Story -->
+          <li class="main-nav"><!-- Our Story -->
             <a href="/">our story</a>
             <div class="subnav story">
               <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
@@ -74,7 +74,7 @@
               </div>
             </div><!-- /subnav -->
           </li>
-          <li><!-- Experience -->
+          <li class="main-nav"><!-- Experience -->
             <a href="/">experience</a>
             <div class="subnav experience">
               <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
@@ -110,36 +110,92 @@
                 packaging stories
               </div>
             </div>
-          </li>
-          <li><!-- Buzz -->
+          </li class="main-nav">
+          <li class="main-nav"><!-- Buzz -->
             <a href="buzz.html">buzz</a>
           </li>
-        </ul>
-        <ul id="buttons">
-          <li>
+          <li class="buttons">
             <a href="javascript:void(0)" id="espanol">en espa&ntilde;ol</a>
             </li>
-          <li><!-- Order -->
+          <li class="buttons"><!-- Order -->
             <img src="img/header-menu/buttons/order.png" id="order-button"/>
+            <div class="subnav order">
+              <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
+              <div class="subnav-content">
+                <a href="menu.html">
+                  <img src="img/subnav_order_online.png" alt=""/>
+                  <h1>Order Online</h1>
+                </a>
+              </div>
+              <img src="img/vertical_dotted.gif" alt=""/>
+              <div class="subnav-content">
+                <img src="img/subnav_order_box.png" alt=""/>
+                <h1>Order Burritos By The Box</h1>
+              </div>
+              <img src="img/vertical_dotted.gif" alt=""/>
+              <div class="subnav-content">
+                <img src="img/subnav_order_fax.png" alt=""/>
+                <h1>Download Fax Order Form</h1>
+              </div>
+              <img src="img/vertical_dotted.gif" alt=""/>
+              <div class="subnav-content">
+                <img src="img/subnav_order_iphone.png" alt=""/>
+                <h1>Get the iPhone App</h1>
+              </div>
+              <img src="img/vertical_dotted.gif" alt=""/>
+              <div class="subnav-content">
+                <img src="img/subnav_order_android.png" alt=""/>
+                <h1>Get the Android App</h1>
+              </div>
+            </div>
           </li>
-          <li><!-- Search -->
+          <li class="buttons"><!-- Search -->
             <img src="img/header-menu/buttons/search.png" id="search-button"/>
-            <div class="subnav experience">
-              content
+            <div class="subnav search">
+              <div id="left">
+                Search:
+                <form class="subnav-form search-form">
+                  <input type="text" placeholder="Type something here to search">
+                  <input type="button" value="">
+                  <div class="dashed-line"></div>
+                </form>
+              </div>
             </div>
           </li>
-          <li><!-- Account -->
+          <li class="buttons account-button"><!-- Account -->
             <img src="img/header-menu/buttons/account.png" id="account-button"/>
-            <div class="subnav experience">
-              content
+            <div class="subnav account">
+              <div id="account-container">
+                <div id="left">
+                  Email:
+                  <form class="subnav-form">
+                    <input type="text" placeholder="Enter your email address">
+                    <div class="dashed-line"></div>
+                  </form>
+                </div>
+                <div id="left">
+                  Password:
+                  <form class="subnav-form">
+                    <input type="text" placeholder="Enter your password">
+                    <input type="button" value="SIGN IN">
+                    <div class="dashed-line"></div>
+                  </form>
+                </div>
+                <div id="create-account">
+                  Don't have an account?
+                  <a href="javascript:void(0);">
+                    Create one now
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
-          <li class="location"><!-- Buttons -->
+          <li class="location buttons"><!-- Buttons -->
             <img src="img/header-menu/buttons/find.png" id="find-button"/>
             <div class="subnav location-finder">
               <div id="left">
                 Find a chipotle near you:
-                <form class="left-form">
+                <form class="subnav-form">
                   <input type="text" value="New York, NY">
                   <input type="button" value="FIND">
                   <div class="dashed-line"></div>
@@ -148,7 +204,7 @@
               <img src="img/or.png" alt="" id="divider"/>
               <div id="right">
                 Search a different location:
-                <form class="left-form">
+                <form class="subnav-form">
                   <input type="text" placeholder="Enter your zipcode, city or country">
                   <input type="button" value="FIND">
                   <div class="dashed-line"></div>
@@ -156,7 +212,7 @@
               </div>
             </div>
           </li>
-          <li class="list">
+          <li class="list buttons">
             <img src="img/header-menu/buttons/list.png" id="list-button"/>
           </li>
         </ul>

@@ -13,7 +13,7 @@
     background-image: url('../img/logo.png');
     background-size: 71px 71px;
   }
-  #nav, #account-button, #espanol, #sticky-subnav, .sec-header {
+  .main-nav, .account-button, #espanol, #sticky-subnav, .sec-header {
     display: none;
   }
   #near-you-container {
@@ -41,11 +41,9 @@
     display: block;
     padding-left: 10px;
   }
-  #buttons a {
-    margin-right: 2px;
-  }
-  #buttons {
-    right: 4px;
+  #nav li.buttons {
+    margin-right: 6px;
+    padding: 0;
   }
   #mobile-hero {
     display: block;
@@ -98,9 +96,6 @@
   .mobile-carousels {
     display: block;
   }
-  #buttons #espanol {
-    display: none;
-  }
   
   /* MENU */
   .mobile {
@@ -139,6 +134,10 @@
   }
   .filters, .buzz-headline {
     display: none;
+  }
+
+  #order-button {
+    margin-right: 140px;
   }
 }
 

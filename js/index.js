@@ -40,9 +40,12 @@ $(function(){
   $('.filter').click(function() {
     $('.checkbox').css('background-color', '#FFFFFF');
     $(this).find('.checkbox').css('background-color', '#999999');
-    $('.' + $(this).attr('data-filter')).fadeOut(function(){
-      $(this).remove();
+    $('#buzz-masonry').children().addClass('box');
+    $('.box').not('.' + $(this).attr('data-filter')).fadeOut(function(){
+      $(this).removeClass('box');
       $('#buzz-masonry').masonry('reload');
+    });
+    $('.' + $(this).attr('data-filter')).fadeIn(function(){
     });
   });
 
