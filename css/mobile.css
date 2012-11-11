@@ -8,10 +8,10 @@
   #logo {
     top: 3px;
     left: 7px;
-    width: 63px;
-    height: 63px;
+    width: 71px;
+    height: 71px;
     background-image: url('../img/logo.png');
-    background-size: 63px 63px;
+    background-size: 71px 71px;
   }
   #nav, #account-button, #espanol, #sticky-subnav, .sec-header {
     display: none;
@@ -47,11 +47,16 @@
   #buttons {
     right: 4px;
   }
+  #mobile-hero {
+    display: block;
+    width: 100%;
+  }
   #hero,
   #hero .slides_container,
   #hero .slides_container div {
     width: 320px;
     height: 232px;
+    display: none;
   }
   #hero .slides_container div img {
     width: 546px;
@@ -59,6 +64,9 @@
   }
   #list-button {
     display: inline-block;
+  }
+  #store-header {
+    display: none;
   }
   .vdiv {
     border-right: none;
@@ -104,6 +112,7 @@
   }
   .menu-detail .side {
     margin: 0 auto;
+    padding-top: 20px;
   }
   #menu-nav {
     display: none;
@@ -115,6 +124,9 @@
     display: block;
     width: 375px;
     margin: 0 auto;
+  }
+  #menu-headline {
+    background: rgba(255, 255, 255, 0.7);
   }
 
 

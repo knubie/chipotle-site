@@ -1,4 +1,5 @@
 $(function(){
+
   $("#hero").slides({
     paginationClass: 'hero-pagination',
     play: 5000
@@ -57,5 +58,15 @@ $(function(){
        scrollTop: $("#" + $(that).attr('data-target')).offset().top
      }, 500);
    });
+
+  $('#list-button').click(function() {
+    $('.subnav.mobile').toggle();
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() >= 768) {
+      $('.menu-detail').css('display', 'block');
+    }
+  });
 
 });

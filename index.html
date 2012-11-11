@@ -20,10 +20,12 @@
           <li><!-- Menu -->
             <a href="menu.html">menu</a>
             <div class="subnav menu">
-              <div class="arrow"></div>
+              <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
               <div class="subnav-content">
-                <img src="img/subnav_menu_menu.png" alt=""/>
-                <h1>Menu</h1>
+                <a href="menu.html">
+                  <img src="img/subnav_menu_menu.png" alt=""/>
+                  <h1>Menu</h1>
+                </a>
               </div>
               <img src="img/vertical_dotted.gif" alt=""/>
               <div class="subnav-content">
@@ -50,7 +52,7 @@
           <li><!-- Our Story -->
             <a href="/">our story</a>
             <div class="subnav story">
-              <div class="arrow"></div>
+              <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
               <div class="subnav-content">
                 <h1>Food With Integrity</h1>
                 our mission toward a better food future
@@ -75,27 +77,35 @@
           <li><!-- Experience -->
             <a href="/">experience</a>
             <div class="subnav experience">
-              <div class="arrow"></div>
+              <img src="img/dropdown-arrow.png" alt="" class="arrow"/>
               <div class="subnav-content">
-                <img src="img/subnav_experience_tv.png" alt=""/>
+                <div class="img-container">
+                  <img src="img/subnav_experience_tv.png" alt=""/>
+                </div>
                 <h1>Chipotle TV</h1>
                 fun, our farmers, our story
               </div>
               <img src="img/vertical_dotted.gif" alt=""/>
               <div class="subnav-content">
-                <img src="img/subnav_experience_music.png" alt=""/>
+                <div class="img-container">
+                  <img src="img/subnav_experience_music.png" alt=""/>
+                </div>
                 <h1>Music</h1>
                 downloads, restaurant soundtrack
               </div>
               <img src="img/vertical_dotted.gif" alt=""/>
               <div class="subnav-content">
-                <img src="img/subnav_experience_apps_games.png" alt=""/>
+                <div class="img-container">
+                  <img src="img/subnav_experience_apps_games.png" alt=""/>
+                </div>
                 <h1>Mobile Apps &amp; Games</h1>
                 ordering, mobile wallet
               </div>
               <img src="img/vertical_dotted.gif" alt=""/>
               <div class="subnav-content">
-                <img src="img/subnav_experience_magazine.png" alt=""/>
+                <div class="img-container">
+                  <img src="img/subnav_experience_magazine.png" alt=""/>
+                </div>
                 <h1>Magazine</h1>
                 packaging stories
               </div>
@@ -105,15 +115,67 @@
             <a href="buzz.html">buzz</a>
           </li>
         </ul>
-        <div id="buttons">
-          <a href="/"><img src="img/header-menu/buttons/list.png" id="list-button"/></a>
-          <a href="/"><img src="img/header-menu/buttons/find.png" id="find-button"/></a>
-          <a href="/"><img src="img/header-menu/buttons/account.png" id="account-button"/></a>
-          <a href="/"><img src="img/header-menu/buttons/search.png" id="search-button"/></a>
-          <a href="/"><img src="img/header-menu/buttons/order.png" id="oder-button"/></a>
-          <a href="/" id="espanol">en espa&ntilde;ol</a>
-        </div>
-      </div>
+        <ul id="buttons">
+          <li>
+            <a href="javascript:void(0)" id="espanol">en espa&ntilde;ol</a>
+            </li>
+          <li><!-- Order -->
+            <img src="img/header-menu/buttons/order.png" id="order-button"/>
+          </li>
+          <li><!-- Search -->
+            <img src="img/header-menu/buttons/search.png" id="search-button"/>
+            <div class="subnav experience">
+              content
+            </div>
+          </li>
+          <li><!-- Account -->
+            <img src="img/header-menu/buttons/account.png" id="account-button"/>
+            <div class="subnav experience">
+              content
+            </div>
+          </li>
+          <li class="location"><!-- Buttons -->
+            <img src="img/header-menu/buttons/find.png" id="find-button"/>
+            <div class="subnav location-finder">
+              <div id="left">
+                Find a chipotle near you:
+                <form class="left-form">
+                  <input type="text" value="New York, NY">
+                  <input type="button" value="FIND">
+                  <div class="dashed-line"></div>
+                </form>
+              </div>
+              <img src="img/or.png" alt="" id="divider"/>
+              <div id="right">
+                Search a different location:
+                <form class="left-form">
+                  <input type="text" placeholder="Enter your zipcode, city or country">
+                  <input type="button" value="FIND">
+                  <div class="dashed-line"></div>
+                </form>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <img src="img/header-menu/buttons/list.png" id="list-button"/>
+          </li>
+        </ul>
+        <div class="subnav mobile">
+          <div class="arrow"></div>
+          <ul>
+            <li><div class="arrow"></div><span>menu</span></li>
+            <li><div class="arrow"></div><span>our story</span></li>
+            <li><div class="arrow"></div><span>experience</span></li>
+            <li><span>buzz</span></li>
+          </ul>
+          <img src="img/dotted-line.png" alt=""/>
+          <div class="bottom">
+            Account<br/>
+            en espanol
+          </div>
+        </div><!-- /subnav -->
+      </div><!-- /header-nav -->
+      <img id="mobile-hero" src="img/heros/hero1.jpg" alt="" />
       <div id="hero-container">
         <div id="hero">
           <div class="slides_container">

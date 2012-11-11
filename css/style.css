@@ -37,17 +37,22 @@ a {
 }
 #nav {
   position: absolute;
-  left: 120px;
+  left: 140px;
   top: 15px;
   width: 100%;
 }
-#nav li {
+#nav li, #buttons li {
   padding-right: 17px;
   text-transform: uppercase;
   height: 38px;
   font-family: 'Francois One', sans-serif;
   font-size: 16px;
+}
+#nav li {
   float: left;
+}
+#buttons li {
+  float: right;
 }
 #nav li a {
   color: #54392d;
@@ -55,13 +60,13 @@ a {
 #nav li:hover a {
   color: #311102;
 }
-#nav li:hover .subnav {
+#nav li:hover .subnav,
+#buttons li:hover .subnav {
   display: block;
 }
-#nav li .subnav {
+#nav li .subnav,
+#buttons li .subnav {
   position: absolute;
-  top: 28px;
-  left: -120px;
   z-index: 9;
   display: none;
   box-sizing: border-box;
@@ -69,10 +74,71 @@ a {
   background-image: url('../img/paper-bg.jpg');
   width: 100%;
   box-shadow: 0 8px 5px -5px rgba(0,0,0,0.3);
+  padding: 15px 0 15px 0;
+}
+#nav li .subnav {
+  top: 28px;
+  left: -140px;
+}
+#buttons li .subnav {
+  top: 42px;
+  left: 15px;
+}
+#header-nav #buttons a .subnav {
+  top: 42px;
+  left: -701px;
+}
+#nav li .subnav.story .subnav-content {
+  margin-top: 19px;
+}
+#nav li .subnav.experience .subnav-content .img-container {
+  height: 74px;
+  vertical-align: bottom;
+}
+#nav li .subnav.experience .subnav-content .img-container img {
+  vertical-align: bottom;
+}
+.subnav.mobile {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 9;
+  display: none;
+  box-sizing: border-box;
+  text-align: left;
+  background-image: url('../img/paper-bg.jpg');
+  width: 100%;
   padding: 20px;
 }
+.subnav.mobile .bottom {
+  margin-top: 18px;
+  line-height: 30px;
+}
+.subnav.mobile ul li {
+  line-height: 34px;
+}
+.subnav.mobile {
+  color: #54392d;
+}
+.subnav.mobile ul li span {
+  margin-left: 9px;
+  font-family: 'Francois One', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.subnav.mobile ul li .arrow {
+  width: 0;
+  height: 0;
+  border-top:   5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:  5px solid #54392d;
+  display: inline-block;
+  margin-right: -9px;
+}
+
 #nav li .subnav .subnav-content {
-  margin: 15px 0;
+  margin: 0;
   text-transform: none;
   font-size: 12px;
   display: inline-block;
@@ -87,7 +153,7 @@ a {
 }
 #nav li .subnav .subnav-content h1 {
   font-size: 14.5px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   color: #7a6960;
   font-family: 'Francois One', sans-serif;
   font-style: normal;
@@ -98,25 +164,17 @@ a {
   background-color: #E2E4E5;
 }
 #nav li .subnav .arrow {
-  width: 0px;
-  height: 0px;
-  border-width: 15px 15px 0 15px;
-  border-color: #CCC transparent transparent transparent;
-  border-style: solid;
   position: absolute;
   top: -1px;
 }
 #nav li .subnav.menu .arrow {
-  left: 123px;
+  left: 154px;
 }
 #nav li .subnav.story .arrow {
-  left: 205px;
+  left: 228px;
 }
 #nav li .subnav.experience .arrow {
-  left: 311px;
-}
-#nav li .subnav.buzz .arrow {
-  left: 397px;
+  left: 323px;
 }
 #nav li .subnav.find .arrow {
   left: 495px;
@@ -130,6 +188,8 @@ a {
   position: absolute;
   top: 4px;
   right: 15px;
+  width: 100%;
+  text-align: right;
 }
 #buttons #espanol {
   margin-right: 0;
@@ -143,11 +203,67 @@ a {
   vertical-align: top;
   margin-right: 12px;
 }
+#buttons .location .dashed-line {
+  display: block;
+  width: 300px;
+  height: 1px;
+  background-image: url('../img/dashed-line-tile.png');
+}
+.subnav.location-finder #left,
+.subnav.location-finder #right,
+.subnav.location-finder #divider {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.subnav.location-finder #left,
+.subnav.location-finder #right {
+  margin-top: 10px;
+}
+.subnav.location-finder #divider {
+  margin: 0 40px;
+}
+.subnav.location-finder {
+  font-family: Georgia, sans-serif;
+  color: #54392d;
+  font-style: italic;
+  font-size: 14px;
+  text-transform: none;
+}
+#buttons .location .left-form {
+  margin-top: 15px;
+}
+#buttons .location .left-form input[type="button"] {
+  background-color: #ac2017;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #FFF;
+  font-size: 15px;
+}
+#buttons .location .left-form input[type="text"] {
+  width: 297px;
+  margin-bottom: -4px;
+  color: #54392d;
+}
+#buttons .location .left-form input {
+  border: 0;
+  background: transparent;
+  font-family: 'Francois One', sans-serif;
+  font-size: 18px;
+  color: #b8afa4;
+  text-transform: uppercase;
+}
+#footer-container .quarters .location input::-webkit-input-placeholder {
+  color: #b8afa4;
+}
 
 /* Hero Carousels
  * ----------------------------------
 */
 
+#mobile-hero {
+  display: none;
+}
 #hero-container {
   width: 100%;
   height: 70%;
@@ -441,6 +557,7 @@ a {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15px;
+  display: block;
 }
 
 .happenings.promos h1 {
@@ -704,6 +821,11 @@ a {
 #nav li .buzz {
   background-color: #F5F6F6;
 }
+#buzz-masonry {
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width: 1024px;
+}
 #buzz-masonry .box {
   margin-top: 21px;
   margin-left: 17px;
@@ -749,7 +871,37 @@ a {
   width: 230px;
   height: 465px;
   box-sizing: border-box;
-  padding: 127px 12px 0 12px;
+  padding: 127px 12px 0 11px;
+}
+.tweets .date {
+  font-size: 10px;
+  color: #7e5b4b;
+  font-weight: bold;
+}
+.tweets .name {
+  font-size: 12px;
+  color: #54392d;
+  font-weight: bold;
+  display: inline;
+}
+.tweets .handle {
+  font-size: 10px;
+  color: #7e5b4b;
+  display: inline;
+}
+.tweets .body {
+  font-size: 12px;
+  color: #54392d;
+  line-height: 14px;
+  margin-top: 4px;
+}
+.tweets .body .red {
+  color: #ac2017;
+}
+.tweets .line {
+  border-bottom: 1px solid #d3cbbf;
+  width: 213px;
+  margin: 10px 0;
 }
 #filter {
   position: absolute;
@@ -790,7 +942,7 @@ a {
   width: 100%;
   z-index: 99;
   height: 89px;
-  margin-top: -89px;
+  margin-top: -91px;
   padding-top: 26px;
   box-sizing: border-box;
   position: relative;
@@ -806,7 +958,9 @@ a {
 #menu-content {
   background-image: url('../img/paper-bg.jpg');
   text-align: center;
-  padding: 25px 0 0 0;
+}
+#menu-nav {
+  position: relative;
 }
 #menu-nav a {
   display: inline-block;
@@ -820,6 +974,11 @@ a {
 }
 #menu-nav a img {
   display: block;
+}
+#menu-nav .menu-down-arrow {
+  display: block;
+  margin: -5px auto 0 auto;
+  padding-right: 691px;
 }
 .menu-detail {
   background-image: url('../img/burrito-image.png');
