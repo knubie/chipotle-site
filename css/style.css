@@ -1073,7 +1073,7 @@ li.buttons .subnav {
   background: rgba(255,255,255,0.3);
   text-align: center;
   width: 100%;
-  z-index: 99;
+  z-index: 8;
   height: 89px;
   margin-top: -91px;
   padding-top: 26px;
@@ -1082,6 +1082,7 @@ li.buttons .subnav {
 }
 #menu-hero {
   width: 100%;
+  max-width: 1624px;
   position: relative;
   overflow: hidden;
 }
