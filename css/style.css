@@ -110,6 +110,7 @@ li.buttons .subnav {
   top: 46px;
   left: 0;
   z-index: 9;
+  box-shadow: 0 8px 5px -5px rgba(0,0,0,0.3);
   display: none;
   box-sizing: border-box;
   text-align: left;

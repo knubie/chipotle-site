@@ -80,8 +80,13 @@
   .subnav.search #left {
     margin-top: 20px;
   }
-  .subnav.order .subnav-content a img, .subnav.order img[src="img/vertical_dotted.gif"] {
+  .subnav.order .subnav-content img, .subnav.order img[src="img/vertical_dotted.gif"] {
     display: none;
+  }
+  #nav li .subnav.order .subnav-content {
+    display: block;
+    text-align: left;
+    margin-left: 30px;
   }
   .buttons .search-form input[type="text"], .buttons .search-form .dashed-line {
     width: 300px;
@@ -102,6 +107,7 @@
   }
   #footer-container .location-quarter {
     width: 320px;
+    margin: 20px 0 20px 36px;
   }
   #three-quarters {
     width: 320px;
