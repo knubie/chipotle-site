@@ -259,7 +259,7 @@ li.buttons .subnav {
   text-align: left;
   float: right;
 }
-#create-account a {
+#nav li:hover #create-account a {
   color: #ac2017;
   display: block;
   border-radius: 3px;
@@ -649,7 +649,7 @@ li.buttons .subnav {
   width: 481px;
 }
 .happenings h1 {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -963,7 +963,7 @@ li.buttons .subnav {
 .filters {
   margin: 20px 6px 0 0;
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   font-family: 'Francois One', sans-serif;
 }
