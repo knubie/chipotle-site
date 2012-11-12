@@ -11,6 +11,9 @@ $(function(){
     paginationClass: 'menu-pagination',
     play: 5000
   });
+  $(".mobile-carousels").slides({
+    generateNextPrev: true
+  });
 
   $(document).scroll(function(){
     if ($(document).scrollTop() >= 492) {

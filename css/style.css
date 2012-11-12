@@ -333,6 +333,41 @@ li.buttons .subnav {
   display: block;
   text-align: center;
 }
+#whats-happening-container .next,
+#whats-happening-container .prev,
+#near-you-container .next,
+#near-you-container .prev {
+  width: 58px;
+  height: 60px;
+  display: block;
+  color: rgba(255, 255, 255, 0);
+  position: absolute;
+  z-index: 99;
+}
+#whats-happening-container .next,
+#near-you-container .next {
+  background-image: url('../img/mobile-next.png');
+}
+#whats-happening-container .next {
+  top: 180px;
+  right: -45px;
+}
+#near-you-container .next {
+  top: 100px;
+  right: 0px;
+}
+#whats-happening-container .prev,
+#near-you-container .prev {
+  background-image: url('../img/mobile-prev.png');
+}
+#whats-happening-container .prev {
+  top: 180px;
+  left: -45px;
+}
+#near-you-container .prev {
+  top: 100px;
+  left: 0px;
+}
 #hero .slides_container div img {
   width: 100%;
 }
@@ -346,11 +381,13 @@ li.buttons .subnav {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-#hero .hero-pagination li {
+#hero .hero-pagination li,
+#near-you-container .pagination li {
   display: inline-block;
   margin-right: 5px;
 }
-#hero .hero-pagination li a {
+#hero .hero-pagination li a,
+#near-you-container .pagination li a {
   color: rgba(255,255,255,0);
   border: 1px solid #54392d;
   width: 12px;
@@ -359,13 +396,39 @@ li.buttons .subnav {
   display: block;
   box-sizing: border-box;
 }
-#hero .hero-pagination li.current a {
+#hero .hero-pagination li.current a,
+#near-you-container .pagination li.current a {
   color: rgba(255,255,255,0);
   background-color: #54392d;
   width: 12px;
   height: 12px;
   border-radius: 6px;
   display: block;
+}
+#whats-happening-container .pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+#whats-happening-container .pagination li a {
+  color: rgba(255,255,255,0);
+  border: 1px solid #9e9189;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  display: block;
+  box-sizing: border-box;
+}
+#whats-happening-container .pagination li.current a {
+  color: rgba(255,255,255,0);
+  background-color: #9e9189;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  display: block;
+}
+#near-you-container .pagination,
+#whats-happening-container .pagination {
+  margin-top: 10px;
 }
 #hero2 {
   width: 1024px;
@@ -542,6 +605,8 @@ li.buttons .subnav {
 }
 .mobile-carousels {
   display: none;
+  margin: 0 auto;
+  position: relative;
 }
 #snowing {
   background-image: url('../img/snowing-promo.png');
