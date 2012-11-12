@@ -133,6 +133,7 @@ li.buttons .subnav {
   font-family: 'Francois One', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  color: #54392D;
 }
 .subnav.mobile ul li .arrow {
   width: 0;
@@ -316,6 +317,8 @@ li.buttons .subnav {
   text-align: center;
   overflow: hidden;
   background-color: #21140d;
+  background-image: url('../img/promo-bg.jpg');
+  box-shadow: 0 0 5px 6px #ccc;
 }
 #hero {
   width: 1024px;
@@ -1175,6 +1178,9 @@ li.buttons .subnav {
 }
 .instagram-feed .red-button {
   margin-top: 15px;
+}
+.instagram-pics-mobile {
+  display: none;
 }
 .down-arrow {
   width: 0;

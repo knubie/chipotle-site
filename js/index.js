@@ -44,12 +44,17 @@ $(function(){
     $('.checkbox').css('background-color', '#FFFFFF');
     $(this).find('.checkbox').css('background-color', '#999999');
     $('#buzz-masonry').children().addClass('box');
-    $('.box').not('.' + $(this).attr('data-filter')).fadeOut(function(){
-      $(this).removeClass('box');
-      $('#buzz-masonry').masonry('reload');
-    });
-    $('.' + $(this).attr('data-filter')).fadeIn(function(){
-    });
+    if ($(this).attr('data-filter') === 'all') {
+      $('.box').fadeIn(function() {
+        $('#buzz-masonry').masonry('reload');
+      });
+    } else {
+      $('.box').not('.' + $(this).attr('data-filter')).fadeOut(function(){
+        $(this).removeClass('box');
+        $('#buzz-masonry').masonry('reload');
+      });
+      $('.' + $(this).attr('data-filter')).fadeIn();
+    }
   });
 
   $('.top').click(function() {

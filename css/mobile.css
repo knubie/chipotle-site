@@ -141,6 +141,13 @@
   .instagram-feed h1 {
     width: 250px;
   }
+  .instagram-pics-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .instagram-pics {
+    display: none;
+  }
   .menu-detail .detail-image {
     display: block;
     width: 375px;
