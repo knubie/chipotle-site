@@ -65,6 +65,9 @@ $(function(){
   $('#list-button').click(function() {
     $('.subnav.mobile').toggle();
   });
+  $('.buttons').click(function() {
+    $(this).find('.subnav').toggle();
+  });
 
   $(window).resize(function() {
     if ($(window).width() >= 768) {

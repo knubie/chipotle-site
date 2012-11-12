@@ -56,6 +56,10 @@ li.buttons {
 }
 #nav li.buttons {
   float: right;
+  padding-bottom: 2px;
+}
+.break {
+  display: none;
 }
 #nav li a {
   color: #54392d;
@@ -202,6 +206,7 @@ li.buttons .subnav {
   display: inline-block;
   margin-top: 11px;
   margin-right: 140px;
+  text-transform: none;
 }
 .buttons .subnav .dashed-line {
   display: block;
@@ -215,6 +220,12 @@ li.buttons .subnav {
   text-align: left;
   display: inline-block;
   vertical-align: top;
+}
+.location-finder #mobile-divider {
+  display: none;
+}
+.location-finder #left {
+  margin-left: 93px;
 }
 .subnav #left,
 .subnav #right {

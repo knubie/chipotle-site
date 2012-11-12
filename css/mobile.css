@@ -66,6 +66,26 @@
   #store-header {
     display: none;
   }
+  .location-finder #divider {
+    display: none;
+  }
+  .location-finder #mobile-divider {
+    display: block;
+    margin: 30px auto 20px auto;
+  }
+  .location-finder #left {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .subnav.search #left {
+    margin-top: 20px;
+  }
+  .subnav.order .subnav-content a img, .subnav.order img[src="img/vertical_dotted.gif"] {
+    display: none;
+  }
+  .buttons .search-form input[type="text"], .buttons .search-form .dashed-line {
+    width: 300px;
+  }
   .vdiv {
     border-right: none;
     border-bottom: 1px solid #6c5c54;

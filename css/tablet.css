@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
   #container {
     min-width: 768px;
   }
@@ -7,6 +7,56 @@
   }
   #header-nav #nav li:nth-child(5) {
     display: none;
+  }
+  #header-nav #nav li:nth-child(6) {
+    margin-right: 140px;
+  }
+  #nav li .subnav.menu .subnav-content {
+    width: 115px;
+  }
+  #nav li .subnav.story .subnav-content {
+    width: 128px;
+  }
+  #nav li .subnav.experience .subnav-content {
+    width: 148px;
+  }
+  #nav li .subnav.story .vdotted {
+    margin: 0 10px;
+  }
+  .buttons .subnav-form input[type="text"] {
+    width: 215px;
+  }
+  .buttons .subnav-form.search-form input[type="text"],
+  .buttons .subnav-form.search-form .dashed-line {
+    width: 580px;
+  }
+  .break {
+    display: block;
+  }
+  .buttons .subnav.search #left {
+    margin-left: 116px;
+  }
+  .buttons .subnav .dashed-line {
+    width: 215px;
+  }
+  .subnav.location-finder #divider {
+    margin: 0 18px;
+  }
+  #account-container .email {
+    margin-left: -256px;
+    margin-bottom: 15px;
+  }
+  #account-container {
+    width: 721px;
+    padding-left: 17px;
+  }
+  #create-account {
+    margin-top: -33px;
+  }
+  #nav li .subnav.menu .subnav-content.first,
+  #nav li .subnav.story .subnav-content.first,
+  #nav li .subnav.experience .subnav-content.first {
+    margin-left: 80px;
   }
   #whats-happening-container .happenings:nth-child(4) {
     display: none;
