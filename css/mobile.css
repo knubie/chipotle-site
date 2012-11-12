@@ -41,6 +41,9 @@
     display: block;
     padding-left: 10px;
   }
+  #nav {
+    left: 86px;
+  }
   #nav li.buttons {
     margin-right: 6px;
     padding: 0;
@@ -170,7 +173,7 @@
   }
 
   #order-button {
-    margin-right: 140px;
+    margin-right: 88px;
   }
 }
 

@@ -37,6 +37,11 @@ $(function(){
   }
 
   $('.collapsable').click(function() {
+    if ($(this).find('img').attr('src') === 'img/collapse-open.png') {
+      $(this).find('img').attr('src', 'img/collapse.png');
+    } else {
+      $(this).find('img').attr('src', 'img/collapse-open.png');
+    }
     $(this).next().slideToggle();
   });
 
