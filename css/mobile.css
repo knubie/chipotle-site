@@ -54,16 +54,14 @@
     margin-right: 6px;
     padding: 0;
   }
-  #mobile-hero {
-    display: block;
-    width: 100%;
+  .hero-pagination {
+    display: none;
   }
   #hero,
   #hero .slides_container,
   #hero .slides_container div {
     width: 320px;
     height: 232px;
-    display: none;
   }
   #hero .slides_container div img {
     width: 546px;
@@ -180,6 +178,19 @@
 
   #order-button {
     margin-right: 88px;
+  }
+  .buzz-filters {
+    display: none;
+  }
+  .buzz-filters-mobile {
+    background-color: rgba(12,2,0,0.4);
+    padding: 16px 0 10px 0;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  #locality {
+    display: none;
   }
 }
 

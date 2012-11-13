@@ -269,12 +269,15 @@ li.buttons .subnav {
 .buttons .subnav-form {
   margin-top: 15px;
 }
-.buttons .subnav-form input[type="button"] {
+.buttons .subnav-form .button {
   background-color: #ac2017;
   padding: 5px 10px;
   border-radius: 3px;
   color: #FFF;
   font-size: 15px;
+  display: inline-block;
+  font-family: 'Francois One', sans-serif;
+  font-style: normal;
 }
 .buttons .subnav-form input[type="text"] {
   width: 297px;
@@ -292,12 +295,13 @@ li.buttons .subnav {
 .subnav-form input::-webkit-input-placeholder {
   color: #b8b0a8;
 }
-.buttons .search-form input[type="button"] {
+.buttons .search-form .button {
   background-image: url('../img/magnifying-glass.png');
   background-repeat: no-repeat;
   width: 34px;
   height: 29px;
   background-position: 8px 5px;
+  padding: 0;
 }
 .buttons .search-form .dashed-line,
 .buttons .search-form input[type="text"] {
@@ -527,7 +531,7 @@ li.buttons .subnav {
   display: inline-block;
   margin-right: 8px;
 }
-#location a, .red-button {
+.red-button {
   padding: 7px 11px;
   background-color: #ac2017;
   font-family: 'Francois One' sans-serif;
@@ -537,7 +541,7 @@ li.buttons .subnav {
   border-radius: 3px;
   text-transform: uppercase;
 }
-#location a {
+#location a.red-button {
   margin-right: 10px;
   margin-top: 15px;
 }
@@ -869,7 +873,7 @@ li.buttons .subnav {
   color: #766960;
 }
 #footer-container .thirds .email input[type="text"] {
-  width: 200px;
+  width: 194px;
   margin-bottom: -4px;
 }
 #footer-container .thirds .email input[type="button"],
@@ -916,6 +920,7 @@ li.buttons .subnav {
 }
 .location-quarter .red-button {
   margin-top: 15px;
+  margin-right: 10px;
 }
 .subtext {
   color: #b8afa4;
@@ -953,6 +958,9 @@ li.buttons .subnav {
   padding-left: 140px;
   padding: 26px 140px;
   position: relative;
+}
+.buzz-filters-mobile {
+  display: none;
 }
 #nav li .buzz {
   background-color: #F5F6F6;
@@ -1085,7 +1093,6 @@ li.buttons .subnav {
 }
 #menu-hero {
   width: 100%;
-  max-width: 1624px;
   position: relative;
   overflow: hidden;
 }
