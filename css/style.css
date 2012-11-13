@@ -337,8 +337,7 @@ li.buttons .subnav {
 }
 @media only screen and (max-width: 1622px) {
   #hero,
-  #hero .slides_container,
-  #hero .slides_container div {
+  #hero .slides_container {
     width: 1024px;
     height: 428px;
   }
@@ -861,6 +860,12 @@ li.buttons .subnav {
   text-align: left;
   width: 230px;
   margin-left: 53px;
+}
+.break {
+  display: none;
+}
+.buttons .subnav-form.right-form {
+  margin-top: 11px;
 }
 #footer-container .thirds .email input {
   border: 0;
