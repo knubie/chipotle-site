@@ -16,6 +16,12 @@
   .main-nav, .account-button, #espanol, #sticky-subnav, .sec-header {
     display: none;
   }
+  #buzz-masonry {
+    width: 263px;
+  }
+  #nav li .subnav {
+    left: -87px;
+  }
   #near-you-container {
     width: 100%;
     padding: 20px 0;

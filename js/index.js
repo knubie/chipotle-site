@@ -75,11 +75,13 @@ $(function(){
      }, 500);
    });
 
-  $('#list-button').click(function() {
-    $('.subnav.mobile').toggle();
-  });
   $('.buttons').click(function() {
-    $(this).find('.subnav').toggle();
+    $('.subnav').not($(this).find('.subnav')).hide();
+    if ($(this).find('.subnav').length > 0) {
+      $(this).find('.subnav').toggle();
+    } else {
+      $('.subnav.mobile').toggle();
+    }
   });
 
   $(window).resize(function() {

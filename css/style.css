@@ -12,6 +12,7 @@ a {
 #container {
   min-width: 1024px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .mobile {
   display: none;
@@ -321,21 +322,23 @@ li.buttons .subnav {
   box-shadow: 0 0 5px 6px #ccc;
 }
 #hero {
-  width: 1024px;
-  height: 446px;
+  width: 1623px;
+  height: 683px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
 }
 #hero .slides_container, #menu-hero .slides_container {
-  width: 1024px;
-  height: 446px;
+  width: 1623px;
+  height: 683px;
 }
-#hero .slides_container div, #menu-hero .slides_container div {
-  width: 1024px;
-  height: 446px;
-  display: block;
-  text-align: center;
+@media only screen and (max-width: 1622px) {
+  #hero,
+  #hero .slides_container,
+  #hero .slides_container div {
+    width: 1024px;
+    height: 428px;
+  }
 }
 #whats-happening-container .next,
 #whats-happening-container .prev,
@@ -875,6 +878,7 @@ li.buttons .subnav {
   background-image: url('../img/near-you-arrow.png');
   width: 16px;
   height: 14px;
+  background-repeat: no-repeat;
 }
 #footer-container .quarters .location input[type="text"] {
   width: 194px;
@@ -1117,10 +1121,10 @@ li.buttons .subnav {
 .menu-detail {
   background-image: url('../img/burrito-image.png');
   background-repeat: no-repeat;
-  background-position: 370px 0px;
+  background-position: 230px 0px;
   margin-top: 25px;
   margin: 25px auto 0 auto;
-  width: 1024px;
+  width: 768px;
 }
 .menu-detail .detail-image {
   display: none;
@@ -1128,7 +1132,6 @@ li.buttons .subnav {
 .menu-detail .side {
   text-align: center;
   width: 220px;
-  margin-left: 166px;
   padding-top: 90px;
   line-height: 18px;
   font-size: 13px;

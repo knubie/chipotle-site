@@ -8,6 +8,9 @@
   #header-nav #nav li:nth-child(5) {
     display: none;
   }
+  #buzz-masonry {
+    width: 768px;
+  }
   #header-nav #nav li:nth-child(6) {
     margin-right: 140px;
   }
