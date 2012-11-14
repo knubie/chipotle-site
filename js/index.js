@@ -75,10 +75,11 @@ $(function(){
      }, 500);
    });
 
-  $('.buttons').click(function() {
-    $('.subnav').not($(this).find('.subnav')).hide();
-    if ($(this).find('.subnav').length > 0) {
-      $(this).find('.subnav').toggle();
+  $('.buttons img:first-child').click(function() {
+    console.log($(this).parent());
+    $('.subnav').not($(this).parent().find('.subnav')).hide();
+    if ($(this).parent().find('.subnav').length > 0) {
+      $(this).parent().find('.subnav').toggle();
     } else {
       $('.subnav.mobile').toggle();
     }
