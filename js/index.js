@@ -77,9 +77,10 @@ $(function(){
 
   $('.buttons img:first-child').click(function() {
     console.log($(this).parent());
-    $('.subnav').not($(this).parent().find('.subnav')).hide();
+    $('.subnav').not($(this).parent().find('.subnav')).not('.subnav.mobile').hide();
     if ($(this).parent().find('.subnav').length > 0) {
       $(this).parent().find('.subnav').toggle();
+      $('.subnav.mobile').hide();
     } else {
       $('.subnav.mobile').toggle();
     }
